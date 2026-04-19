@@ -1,0 +1,1053 @@
+[
+  {
+    "ID": "1",
+    "ImageName": null,
+    "Question": "Which of the following is a typical test objective?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Validating that documented requirements are met"
+      },
+      {
+        "Label": "B",
+        "Text": "Causing failures and identifying defects"
+      },
+      {
+        "Label": "C",
+        "Text": "Initiating errors and identifying root causes"
+      },
+      {
+        "Label": "D",
+        "Text": "Verifying the test object meets user expectations"
+      }
+    ],
+    "Answer": "B",
+    "Explanation": "B) Is correct. Causing failures and identifying defects is probably the most common objective of dynamic testing"
+  },
+  {
+    "ID": "2",
+    "ImageName": null,
+    "Question": "Which of the following statements BEST describes the difference between testing and debugging?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Testing causes failures while debugging fixes failures"
+      },
+      {
+        "Label": "B",
+        "Text": "Testing is a negative activity while debugging is a positive activity"
+      },
+      {
+        "Label": "C",
+        "Text": "Testing determines that defects exist while debugging removes defects"
+      },
+      {
+        "Label": "D",
+        "Text": "Testing finds the cause of defects while debugging fixes the cause of defects"
+      }
+    ],
+    "Answer": "C",
+    "Explanation": "C) Is correct. Testing determines that defects exist either directly through observation of the defect in reviews (or by a tool in static analysis), or indirectly by causing a failure in dynamic testing. Debugging is a separate activity from testing (normally performed by developers) and is concerned with locating defects (only for dynamic testing) and fixing the defects"
+  },
+  {
+    "ID": "3",
+    "ImageName": null,
+    "Question": "The ‘absence-of-defects fallacy’ is one of the principles of testing. Which of the following is an example of addressing this principle in practice?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Explaining that it is not possible for testing to show the absence of defects"
+      },
+      {
+        "Label": "B",
+        "Text": "Supporting the end users to perform acceptance testing"
+      },
+      {
+        "Label": "C",
+        "Text": "Ensuring that no implementation defects remain in the delivered system"
+      },
+      {
+        "Label": "D",
+        "Text": "Modifying tests that cause no failures to ensure few defects remain"
+      }
+    ],
+    "Answer": "B",
+    "Explanation": "B) Is correct. \n\nBy supporting the end user to perform acceptance testing it should be possible to validate that the system meets users' needs and expectations. \n\nThe ‘absence-of-defects fallacy’ is concerned with the idea that ensuring correctness in accordance with the requirements (i.e., verifying the absence of implementation defects) does not guarantee user satisfaction with the system. To address this it is also necessary to validate that the system meets users' needs and expectations, fulfills business objectives, and outperforms competing systems. "
+  },
+  {
+    "ID": "4",
+    "ImageName": null,
+    "ExplanationImageName": "Exam_5_Explanation_ID_4.jpg",
+    "Question": "Which of the following test activities are MOST likely to involve the application of boundary value analysis and equivalence partitioning?",
+    "SelectionType": "Select TWO options.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Test implementation"
+      },
+      {
+        "Label": "B",
+        "Text": "Test design"
+      },
+      {
+        "Label": "C",
+        "Text": "Test execution"
+      },
+      {
+        "Label": "D",
+        "Text": "Test monitoring"
+      },
+      {
+        "Label": "E",
+        "Text": "Test analysis"
+      }
+    ],
+    "Answer": "B, E",
+    "Explanation": "B) Is correct. \n\nTest design is likely to involve the use of test techniques to create test cases from test conditions and coverage items \nE) Is correct. Test analysis is likely to involve the use of test techniques to identify test conditions. \n\nGiven the following description of test analysis: To identify the features that require testing, the test basis is analyzed and defined as test conditions, which are then prioritized along with related risks. The systematic identification of test conditions as coverage items often involves using test techniques both during test analysis and as part of the test design activity. From the above description, it can be seen that test techniques are often used in the test analysis and test design activities. Boundary value analysis and equivalence partitioning are test techniques. "
+  },
+  {
+    "ID": "5",
+    "ImageName": null,
+    "Question": "Given the following testware: \n1. Coverage items \n2. Change requests \n3. Test execution schedule \n4. Prioritized test conditions \n\nAnd the following test activities \nA. Test analysis \nB. Test design \nC. Test implementation \nD. Test completion \n\nWhich of the following BEST shows the testware produced by the activities?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "1B, 2D, 3C, 4A"
+      },
+      {
+        "Label": "B",
+        "Text": "1B, 2D, 3A, 4C"
+      },
+      {
+        "Label": "C",
+        "Text": "1D, 2C, 3A, 4B"
+      },
+      {
+        "Label": "D",
+        "Text": "1D, 2C, 3B, 4A"
+      }
+    ],
+    "Answer": "A",
+    "Explanation": "A) Is correct. The correct match is: 1B, 2D, 3C, 4A"
+  },
+  {
+    "ID": "6",
+    "ImageName": null,
+    "Question": "Which of the following statements about the different testing roles is MOST likely to be CORRECT?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "In Agile software development, the test management role is the primary responsibility of the team, while the testing role is primarily the responsibility of a single individual from outside the team"
+      },
+      {
+        "Label": "B",
+        "Text": "The testing role is primarily responsible for test monitoring and control, while the test management role is primarily responsible for test planning and test completion"
+      },
+      {
+        "Label": "C",
+        "Text": "In Agile software development, test management activities that span multiple teams are handled by a test manager outside the team, while some test management tasks are handled by the team itself"
+      },
+      {
+        "Label": "D",
+        "Text": "The test management role is primarily responsible for test analysis and test design, while the testing role is primarily responsible for test implementation and execution"
+      }
+    ],
+    "Answer": "C",
+    "Explanation": "C) Is correct. In Agile software development, some of the test management tasks may be handled by the Agile team itself. However, for test activities that span multiple teams within an organization, test managers outside of the development team may perform these tasks"
+  },
+  {
+    "ID": "7",
+    "ImageName": null,
+    "Question": "Which of the following is an advantage of the whole-team approach?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Teams with no testers"
+      },
+      {
+        "Label": "B",
+        "Text": "Improved team dynamics"
+      },
+      {
+        "Label": "C",
+        "Text": "Specialist team members"
+      },
+      {
+        "Label": "D",
+        "Text": "Larger team sizes"
+      }
+    ],
+    "Answer": "B",
+    "Explanation": "B) Is correct. By leveraging the diverse skill sets of each team member most effectively, the whole-team approach fosters superior team dynamics, promotes robust communication and collaboration, and generates a synergistic effect that benefits the entire project"
+  },
+  {
+    "ID": "8",
+    "ImageName": null,
+    "Question": "Which of the following statements about the independence of testing is CORRECT?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Independent testers will find defects due to their different technical perspective from developers, but their independence may lead to an adversarial relationship with the developers"
+      },
+      {
+        "Label": "B",
+        "Text": "Developers’ familiarity with their own code means they only find a few defects in it, however their shared software background with testers means these defects would also be found by the testers"
+      },
+      {
+        "Label": "C",
+        "Text": "Independent testing requires testers who are outside the developer’s team and ideally from outside the organization, however these testers find it difficult to understand the application domain"
+      },
+      {
+        "Label": "D",
+        "Text": "Testers from outside the developer’s team are more independent than testers from within the team, but the testers from within the team are more likely to be blamed for delays in product release"
+      }
+    ],
+    "Answer": "A",
+    "Explanation": "A) Is correct. The primary benefit of independence in testing is that testers are more likely to identify different types of failures and defects compared to developers, due to their varied backgrounds, technical viewpoints, and potential biases, including cognitive bias. However, the main disadvantage of independence in testing is that testers may become isolated from the development team, leading to communication problems, a lack of collaboration, and potentially an adversarial relationship, with testers being blamed for delays and bottlenecks in the release process"
+  },
+  {
+    "ID": "9",
+    "ImageName": null,
+    "Question": "Which of the following is a good testing practice that applies to all software development lifecycles?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "For each test level, there is a corresponding development level"
+      },
+      {
+        "Label": "B",
+        "Text": "For each test objective, there is a corresponding development objective"
+      },
+      {
+        "Label": "C",
+        "Text": "For every software test activity, there is a corresponding user activity"
+      },
+      {
+        "Label": "D",
+        "Text": "For every software development activity, there is a corresponding test activity"
+      }
+    ],
+    "Answer": "D",
+    "Explanation": "D) Is correct. Quality control applies to all development activities, meaning that every software development activity has a corresponding test activity"
+  },
+  {
+    "ID": "10",
+    "ImageName": null,
+    "Question": "Which of the following is an example of a test-first approach to development?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Component Test-Driven Development"
+      },
+      {
+        "Label": "B",
+        "Text": "Integration Test-Driven Development"
+      },
+      {
+        "Label": "C",
+        "Text": "System Test-Driven Development"
+      },
+      {
+        "Label": "D",
+        "Text": "Acceptance Test-Driven Development"
+      }
+    ],
+    "Answer": "D",
+    "Explanation": "D) Is correct. Acceptance Test-Driven Development (ATDD) is a well- known example of a test-first approach to development"
+  },
+  {
+    "ID": "11",
+    "ImageName": null,
+    "Question": "Which of the following provides the BEST description of the shift-left approach?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "When agreed by the developers, manual activities on the left-hand side of the test process are automated to support the principle of ‘early testing saves time and money’"
+      },
+      {
+        "Label": "B",
+        "Text": "Where cost-effective, test activities are moved to be performed earlier in the software development lifecycle (SDLC) to reduce the total cost of quality by reducing the number of defects found later in the SDLC"
+      },
+      {
+        "Label": "C",
+        "Text": "When they have spare time available, testers are required to automate tests for regression testing, starting with component tests and component integration tests"
+      },
+      {
+        "Label": "D",
+        "Text": "When available, testers are trained to perform tasks early in the SDLC to allow more test activities to be automated later in the SDLC"
+      }
+    ],
+    "Answer": "B",
+    "Explanation": "B) Is correct. Shift-left emphasizes the importance of starting testing earlier in the software development lifecycle (SDLC). Implementing shift-left testing necessitates additional training, and increased effort and costs during the early stages of the SDLC, nevertheless, overall savings should be higher"
+  },
+  {
+    "ID": "12",
+    "ImageName": null,
+    "Question": "Which of the following is LEAST likely to occur as a result of a retrospective?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "The quality of future test objects improves by identifying improvements in development practices"
+      },
+      {
+        "Label": "B",
+        "Text": "Test efficiency improves by speeding up the configuration of test environments through automation"
+      },
+      {
+        "Label": "C",
+        "Text": "End users’ understanding of the development and test processes is improved"
+      },
+      {
+        "Label": "D",
+        "Text": "Automated test scripts are enhanced through feedback from developers"
+      }
+    ],
+    "Answer": "C",
+    "Explanation": "C) Is correct. Participants at retrospectives typically include testers, developers, architects, product owners, and business analysts, but end users are rarely invited or attend these meetings – and they are also unlikely to receive any reports from these meetings. So, it is very unlikely that they will learn and understand more about the development and test processes through retrospectives"
+  },
+  {
+    "ID": "13",
+    "ImageName": null,
+    "Question": "Which of the following test levels is MOST likely being performed if the testing is focused on validation and is not being performed by testers?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Component testing"
+      },
+      {
+        "Label": "B",
+        "Text": "Component integration testing"
+      },
+      {
+        "Label": "C",
+        "Text": "System integration testing"
+      },
+      {
+        "Label": "D",
+        "Text": "Acceptance testing"
+      }
+    ],
+    "Answer": "D",
+    "Explanation": "D) Is correct. Acceptance testing focuses on validating that the system meets the user's business needs and is ready for deployment. Ideally, this testing is carried out by the end users"
+  },
+  {
+    "ID": "14",
+    "ImageName": null,
+    "Question": "The navigation system software has been updated due to it suggesting routes that break traffic laws, such as driving the wrong way down one-way streets. Which of the following BEST describes the testing that will be performed?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Only confirmation testing"
+      },
+      {
+        "Label": "B",
+        "Text": "Confirmation testing then regression testing"
+      },
+      {
+        "Label": "C",
+        "Text": "Only regression testing"
+      },
+      {
+        "Label": "D",
+        "Text": "Regression testing then confirmation testing"
+      }
+    ],
+    "Answer": "B",
+    "Explanation": "B) Is correct. Confirmation testing will check that the updates have resulted in a correct implementation, and then regression testing will be used to ensure that no defects have been introduced or uncovered in unchanged areas of the system"
+  },
+  {
+    "ID": "15",
+    "ImageName": null,
+    "ExplanationImageName": "Exam_5_Explanation_ID_15.jpg",
+    "Question": "Given the following example defects: \ni. Two different parts of the design specification disagree due to the complexity of the design \nii. A response time is too long and so makes users lose patience \niii. A path in the code cannot be reached during execution \niv. A variable is declared but never subsequently used in the program \nv. The amount of memory needed by the program to generate a report is too high \n\nWhich of the following BEST identifies example defects that could be found by static testing (rather than dynamic testing)?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "ii, v"
+      },
+      {
+        "Label": "B",
+        "Text": "iii, v"
+      },
+      {
+        "Label": "C",
+        "Text": "i, ii, iv"
+      },
+      {
+        "Label": "D",
+        "Text": "i, iii, iv"
+      }
+    ],
+    "Answer": "D",
+    "Explanation": "D) Is correct. The correct match for static testing is i, iii, and iv"
+  },
+  {
+    "ID": "16",
+    "ImageName": null,
+    "Question": "Which of the following is a benefit of early and frequent stakeholder feedback?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Changes to requirements are understood and implemented earlier"
+      },
+      {
+        "Label": "B",
+        "Text": "It ensures business stakeholders understand user requirements"
+      },
+      {
+        "Label": "C",
+        "Text": "It allows product owners to change their requirements as often as they want"
+      },
+      {
+        "Label": "D",
+        "Text": "End users are told which requirements will not be implemented prior to release"
+      }
+    ],
+    "Answer": "A",
+    "Explanation": "A) Is correct. Obtaining feedback from stakeholders early and often in the software development process can be highly beneficial. It facilitates early communication of potential quality issues, can prevent misunderstandings about requirements, and ensures that any changes in stakeholder requirements are understood and implemented sooner"
+  },
+  {
+    "ID": "17",
+    "ImageName": null,
+    "Question": "Given the following review types: \n1. Technical review \n2. Informal review \n3. Inspection \n4. Walkthrough \n\nAnd the following descriptions: \nA. Includes objectives such as gaining consensus, generating new ideas, and motivating authors to improve \nB. Includes objectives such as educating reviewers, gaining consensus, generating new ideas and detecting potential defects \nC. The main objective is detecting potential defects and it requires metrics collection to support process improvement \nD. The main objective is detecting potential defects and it generates no formal documented output \n\nWhich of the following BEST matches the review types and the descriptions?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "1A, 2B, 3C, 4D"
+      },
+      {
+        "Label": "B",
+        "Text": "1A, 2D, 3C, 4B"
+      },
+      {
+        "Label": "C",
+        "Text": "1B, 2C, 3D, 4A"
+      },
+      {
+        "Label": "D",
+        "Text": "1C, 2D, 3A, 4B"
+      }
+    ],
+    "Answer": "B",
+    "Explanation": "Considering each of the listed review types: \n1. Technical review - This type of review is performed by technically qualified reviewers and led by a moderator. The objectives are to gain consensus and make decisions on technical problems while also evaluating quality and building confidence in the work product, generating new ideas, motivating and enabling authors to improve, and detecting anomalies \n2. Informal review - The main objective is to detect anomalies. The process is not defined and does not require formal documented output \n3. Inspection - This is the most formal review type, and it follows the complete generic review process. The primary objective is to find the most anomalies, and other objectives include evaluating quality and building confidence in the work product, motivating and enabling authors to improve, and collecting metrics that can be used to enhance the software development life cycle (SDLC), including the inspection process. The author cannot act as the review leader or scribe \n4. Walkthrough - Led by the author, this type of review serves various objectives such as evaluating quality and building confidence in the work product, educating reviewers, gaining consensus, generating new ideas, motivating and enabling authors to improve, and detecting anomalies. Reviewers might perform an individual review before the walkthrough, but this is not mandatory \n\nA. Includes objectives such as gaining consensus, generating new ideas, and motivating authors to improve \nB. Includes objectives such as educating reviewers, gaining consensus, generating new ideas and detecting potential defects \nC. The main objective is detecting potential defects and it requires metrics collection to support process improvement \nD. The main objective is detecting potential defects and it generates no formal documented output "
+  },
+  {
+    "ID": "18",
+    "ImageName": null,
+    "Question": "Which of the following is a factor that contributes to a successful review?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Ensure management participate as reviewers"
+      },
+      {
+        "Label": "B",
+        "Text": "Split large work products into smaller parts"
+      },
+      {
+        "Label": "C",
+        "Text": "Set reviewer evaluation as an objective"
+      },
+      {
+        "Label": "D",
+        "Text": "Plan to cover one document per review"
+      }
+    ],
+    "Answer": "B",
+    "Explanation": "B) Is correct. To ensure successful reviews, it's important to break the work product into parts that are small enough to be reviewed in a reasonable timescale to prevent reviewers from losing focus during individual review or review meetings"
+  },
+  {
+    "ID": "19",
+    "ImageName": null,
+    "Question": "What is the MAIN difference between black-box test techniques and experience-based test techniques?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "The test object"
+      },
+      {
+        "Label": "B",
+        "Text": "The test level at which the test technique is used"
+      },
+      {
+        "Label": "C",
+        "Text": "The test basis"
+      },
+      {
+        "Label": "D",
+        "Text": "The software development lifecycle (SDLC) in which the test technique can be used"
+      }
+    ],
+    "Answer": "C",
+    "Explanation": "C) Is correct. Black-box test techniques (also known as specification-based techniques) are based on an analysis of the specified behavior of the test object without reference to its internal structure. So, the test basis is usually a specification. Experience-based test techniques effectively use the knowledge and experience of testers for the design and implementation of test cases. This means that the tester, when designing tests, may not use the specification at all"
+  },
+  {
+    "ID": "20",
+    "ImageName": null,
+    "ExplanationImageName": "Exam_5_Explanation_ID_20.jpg",
+    "Question": "You are testing a PIN validator which accepts valid PINs and rejects invalid PINs. A PIN is a sequence of digits. A PIN is valid if it consists of four digits and at least two of them are different. \n\nWhich of the following sets of input test data cover all equivalence partitions for this scenario?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "112, 1111, 1234, 123456"
+      },
+      {
+        "Label": "B",
+        "Text": "1, 123, 1111, 1234"
+      },
+      {
+        "Label": "C",
+        "Text": "12, 112, 1112, 11112"
+      },
+      {
+        "Label": "D",
+        "Text": "1, 111, 1111, 11111"
+      }
+    ],
+    "Answer": "A",
+    "Explanation": "A) Is correct. \n\n112 covers D2, L1, G2; 1111 covers D1, L2, G2; 1234 covers D2, L2, G1; 123456 covers D2, L3, G2"
+  },
+  {
+    "ID": "21",
+    "ImageName": "Exam_5_ID_21.jpg",
+    "ExplanationImageName": "Exam_5_Explanation_ID_21.jpg",
+    "Question": "W A developer was asked to implement the following business rule: \n\nYou design the test cases using 2-value boundary value analysis. \n\nWhich of the following sets of test inputs achieves the greatest coverage?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "100, 150, 200, 201"
+      },
+      {
+        "Label": "B",
+        "Text": "99, 100, 200, 201"
+      },
+      {
+        "Label": "C",
+        "Text": "98, 99, 100, 101"
+      },
+      {
+        "Label": "D",
+        "Text": "101, 150, 199, 200"
+      }
+    ],
+    "Answer": "D",
+    "Explanation": "D) Is correct. 101, 199 and 200 are valid coverage items for 2-value BVA, so we achieve 75% coverage"
+  },
+  {
+    "ID": "22",
+    "ImageName": "Exam_5_ID_22.jpg",
+    "Question": "You are working on a project to develop a system to analyze driving test results. You have been asked to design test cases based on the following decision table. \n\nWhat test data will show that there are contradictory rules in the decision table?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "C1 = T, C2 = T, C3 = F"
+      },
+      {
+        "Label": "B",
+        "Text": "C1 = T, C2 = F, C3 = T"
+      },
+      {
+        "Label": "C",
+        "Text": "C1 = T, C2 = T, C3 = T and C1 = F, C2 = T, C3 = T"
+      },
+      {
+        "Label": "D",
+        "Text": "C1 = F, C2 = F, C3 = F"
+      }
+    ],
+    "Answer": "D",
+    "Explanation": "D) Is correct. The combination (F, F, F) matches both R2 and R3, but R2 and R3 have different actions, so this shows a contradiction between R2 and R3."
+  },
+  {
+    "ID": "23",
+    "ImageName": "Exam_5_ID_23.jpeg",
+    "ExplanationImageName": "Exam_5_Explanation_ID_23.jpg",
+    "Question": "You are designing test cases based on the following state transition diagram: \n\nWhat is the MINIMUM number of test cases required to achieve 100% valid transitions coverage?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "3"
+      },
+      {
+        "Label": "B",
+        "Text": "2"
+      },
+      {
+        "Label": "C",
+        "Text": "5"
+      },
+      {
+        "Label": "D",
+        "Text": "6"
+      }
+    ],
+    "Answer": "A",
+    "Explanation": "A) Is correct"
+  },
+  {
+    "ID": "24",
+    "ImageName": "Exam_5_ID_24.jpg",
+    "Question": "You want to apply branch testing to the code represented by the following control flow graph. \n\nHow many coverage items do you need to test?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "2"
+      },
+      {
+        "Label": "B",
+        "Text": "4"
+      },
+      {
+        "Label": "C",
+        "Text": "8"
+      },
+      {
+        "Label": "D",
+        "Text": "7"
+      }
+    ],
+    "Answer": "C",
+    "Explanation": "C) Is correct. \n\nIn branch testing the coverage items are branches, which are represented by the edges of a control flow graph. There are 8 edges in the control flow graph. "
+  },
+  {
+    "ID": "25",
+    "ImageName": null,
+    "Question": "How can white-box testing be useful in support of black-box testing?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "White-box coverage measures can help testers evaluate black-box tests in terms of the code coverage achieved by these black-box tests"
+      },
+      {
+        "Label": "B",
+        "Text": "White-box coverage analysis can help testers identify unreachable fragments of the source code"
+      },
+      {
+        "Label": "C",
+        "Text": "Branch testing subsumes black-box test techniques, so achieving full branch coverage guarantees achieving full coverage of any black-box technique"
+      },
+      {
+        "Label": "D",
+        "Text": "White-box test techniques can provide coverage items for black-box techniques"
+      }
+    ],
+    "Answer": "A",
+    "Explanation": "A) Is correct. Performing only black-box testing does not provide a measure of actual code coverage. White-box coverage measures provide an objective measurement of coverage and provide the necessary information to allow additional tests to be generated to increase this coverage, and subsequently increase confidence in the code"
+  },
+  {
+    "ID": "26",
+    "ImageName": null,
+    "Question": "Consider the following list: \n• Correct input not accepted \n• Incorrect input accepted \n• Wrong output format \n• Division by zero \n\nWhat test technique is MOST PROBABLY used by the tester who uses this list when performing testing?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Exploratory testing"
+      },
+      {
+        "Label": "B",
+        "Text": "Fault attack"
+      },
+      {
+        "Label": "C",
+        "Text": "Checklist-based testing"
+      },
+      {
+        "Label": "D",
+        "Text": "Boundary value analysis"
+      }
+    ],
+    "Answer": "B",
+    "Explanation": "B) Is correct. This is a list of possible failures. Fault attacks are a methodical approach to the implementation of error guessing and require the tester to create or acquire a list of possible errors, defects and failures, and to design tests that will identify defects associated with the errors, expose the defects, or cause the failures"
+  },
+  {
+    "ID": "27",
+    "ImageName": null,
+    "Question": "Which of the following BEST describes how using checklist-based testing can result in increased coverage?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Checklist items can be defined at a sufficiently low level of detail, so the tester can implement and execute detailed test cases based on these items"
+      },
+      {
+        "Label": "B",
+        "Text": "Checklists can be automated, so each time an automated test execution covers the checklist items, it results in additional coverage"
+      },
+      {
+        "Label": "C",
+        "Text": "Each checklist item should be tested separately and independently, so the elements cover different areas of the software"
+      },
+      {
+        "Label": "D",
+        "Text": "Two testers designing and executing tests based on the same high-level checklist items will typically perform the testing in slightly different ways"
+      }
+    ],
+    "Answer": "D",
+    "Explanation": "D) Is correct. If the checklists are high-level, some variability in the actual testing is likely to occur, resulting in potentially greater coverage but less repeatability. If two testers follow a checklist of high-level items, each of them may use different test data, test steps, etc. This way, one tester will probably cover some areas not covered by the other tester and this will result in increased coverage"
+  },
+  {
+    "ID": "28",
+    "ImageName": null,
+    "Question": "Which of the following provides the BEST example of a scenario-oriented acceptance criterion?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "The application must allow users to delete their account and all associated data upon request"
+      },
+      {
+        "Label": "B",
+        "Text": "When a customer adds an item to their cart and proceeds to checkout, they should be prompted to log in or create an account if they haven’t already done so"
+      },
+      {
+        "Label": "C",
+        "Text": "IF (contain(product(23).Name, cart.products())) THEN return FALSE"
+      },
+      {
+        "Label": "D",
+        "Text": "The website must comply with the ICT Accessibility 508 Standards and ensure that all content is accessible to users with disabilities"
+      }
+    ],
+    "Answer": "B",
+    "Explanation": "B) Is correct. This acceptance criterion describes an example scenario that must be realizable by the system. This is an example of a scenario- oriented acceptance criterion"
+  },
+  {
+    "ID": "29",
+    "ImageName": null,
+    "Question": "You are using acceptance test-driven development and designing test cases based on the following user story: \n\nAs a Regular or Special user, I want to be able to use my electronic floor card, to access specific floors. \n\nAcceptance Criteria: \nAC1: Regular users have access to floors 1 to 3 \nAC2: Floor 4 is only accessible to Special users \nAC3: Special users have all the access rights of Regular users \n\nWhich test case is the MOST reasonable one to test AC3?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Check that a Regular user can access floors 1 and 3"
+      },
+      {
+        "Label": "B",
+        "Text": "Check that a Regular user cannot access floor 4"
+      },
+      {
+        "Label": "C",
+        "Text": "Check that a Special user can access floor 5"
+      },
+      {
+        "Label": "D",
+        "Text": "Check that a Special user can access floors 1, 2 and 3"
+      }
+    ],
+    "Answer": "D",
+    "Explanation": "D) Is correct. This way we can check if a Special user can access floors which are accessible to a Regular user"
+  },
+  {
+    "ID": "30",
+    "ImageName": null,
+    "Question": "Which of the following is NOT a purpose of a test plan?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "To define test data and expected results for component tests and component integration tests"
+      },
+      {
+        "Label": "B",
+        "Text": "To define as exit criteria from the component test level that “100% statement coverage and 100% branch coverage must be achieved”"
+      },
+      {
+        "Label": "C",
+        "Text": "To describe what fields the test progress report shall contain and what should be the form of this report"
+      },
+      {
+        "Label": "D",
+        "Text": "To explain why system integration testing will be excluded from testing, although the test strategy requires this test level"
+      }
+    ],
+    "Answer": "A",
+    "Explanation": "A) Is correct. The test plan may include test data requirements (as part of the test approach), but not the detailed test data for test cases. Test data is part of the test cases, not the test plan. Also, it is usually impossible to define such data when the test plan is created, because it is not exactly known what the components will look like"
+  },
+  {
+    "ID": "31",
+    "ImageName": "Exam_5_ID_31.jpg",
+    "ExplanationImageName": "Exam_5_Explanation_ID_31.jpg",
+    "Question": "At the beginning of each iteration, the team estimates the amount of work (in person-days) they will need to complete during the iteration. Let E(n) be the estimated amount of work for iteration n, and let A(n) be the actual amount of work done in iteration n. From the third iteration, the team uses the following estimation model based on extrapolation: \n\nWhat is the estimated amount of work for iteration #5?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "10.5 person-days"
+      },
+      {
+        "Label": "B",
+        "Text": "8.25 person-days"
+      },
+      {
+        "Label": "C",
+        "Text": "6.5 person-days"
+      },
+      {
+        "Label": "D",
+        "Text": "9.4 person-days"
+      }
+    ],
+    "Answer": "C",
+    "Explanation": "C) Is correct"
+  },
+  {
+    "ID": "32",
+    "ImageName": "Exam_5_ID_32.jpg",
+    "ExplanationImageName": "Exam_5_Explanation_ID_32.jpg",
+    "Question": "You are preparing a test execution schedule for executing seven test cases TC 1 to TC 7. \n\nThe following figure includes the priorities of these test cases (1=highest priority, 3 = lowest priority). \n\nThe figure also shows the dependencies between test cases using arrows. For instance, the arrow from TC 4 to TC 5 means that TC 5 can only be executed if TC 4 was previously executed. \n\nWhich test case should be executed sixth?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "TC 3"
+      },
+      {
+        "Label": "B",
+        "Text": "TC 5"
+      },
+      {
+        "Label": "C",
+        "Text": "TC 6"
+      },
+      {
+        "Label": "D",
+        "Text": "TC 2"
+      }
+    ],
+    "Answer": "A",
+    "Explanation": "A) Is correct"
+  },
+  {
+    "ID": "33",
+    "ImageName": null,
+    "Question": "What does the test pyramid model show?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "That tests may have different priorities"
+      },
+      {
+        "Label": "B",
+        "Text": "That tests may have different granularity"
+      },
+      {
+        "Label": "C",
+        "Text": "That tests may require different coverage criteria"
+      },
+      {
+        "Label": "D",
+        "Text": "That tests may depend on other tests"
+      }
+    ],
+    "Answer": "B",
+    "Explanation": "B) Is correct. The test pyramid model shows that different tests have different levels of granularity"
+  },
+  {
+    "ID": "34",
+    "ImageName": null,
+    "Question": "What is the relationship between the testing quadrants, test levels and test types?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Testing quadrants represent particular combinations of test levels and test types, defining their location in the software development lifecycle"
+      },
+      {
+        "Label": "B",
+        "Text": "Testing quadrants describe the degree of granularity of individual test types performed at each test level"
+      },
+      {
+        "Label": "C",
+        "Text": "Testing quadrants assign the test types that can be performed to the test levels"
+      },
+      {
+        "Label": "D",
+        "Text": "Testing quadrants group test levels and test types by several criteria such as targeting specific stakeholders"
+      }
+    ],
+    "Answer": "D",
+    "Explanation": "D) Is correct. The testing quadrants group test levels, test types, activities, test techniques and work products in Agile software development. In this model, tests can be business facing or technology facing. Tests can support the team (i.e., guide the development) or critique the product (i.e., measure its behavior against expectations). The combination of these two viewpoints determines the four quadrants"
+  },
+  {
+    "ID": "35",
+    "ImageName": null,
+    "Question": "Which of the following is an example of how product risk analysis may influence the thoroughness and scope of testing?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Continuous risk monitoring allows us to identify emerging risk as soon as possible"
+      },
+      {
+        "Label": "B",
+        "Text": "Risk identification allows us to implement risk mitigation activities and reduce the risk level"
+      },
+      {
+        "Label": "C",
+        "Text": "The assessed risk level helps us to select the rigor of testing"
+      },
+      {
+        "Label": "D",
+        "Text": "Risk analysis allows us to derive coverage items"
+      }
+    ],
+    "Answer": "C",
+    "Explanation": "C) Is correct. This is an example of how risk analysis influences the thoroughness and scope of testing"
+  },
+  {
+    "ID": "36",
+    "ImageName": null,
+    "Question": "Which of the following activities in the test process makes the MOST use of test progress reports?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Test design"
+      },
+      {
+        "Label": "B",
+        "Text": "Test completion"
+      },
+      {
+        "Label": "C",
+        "Text": "Test analysis"
+      },
+      {
+        "Label": "D",
+        "Text": "Test planning"
+      }
+    ],
+    "Answer": "B",
+    "Explanation": "B) Is correct. A test completion report is prepared during test completion, when a project, test level, or test type is complete and when, ideally, its exit criteria have been met. This report uses information from test progress reports and other data"
+  },
+  {
+    "ID": "37",
+    "ImageName": null,
+    "Question": "Which of the following is NOT an example of how configuration management supports testing?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "All commits to the repository are uniquely identified and version controlled"
+      },
+      {
+        "Label": "B",
+        "Text": "All changes in the test environment elements are tracked"
+      },
+      {
+        "Label": "C",
+        "Text": "All requirement specifications are referenced unambiguously in test plans"
+      },
+      {
+        "Label": "D",
+        "Text": "All identified defects have an assigned status"
+      }
+    ],
+    "Answer": "D",
+    "Explanation": "D) Is correct. This is ensured by the defect management, not configuration management process"
+  },
+  {
+    "ID": "38",
+    "ImageName": null,
+    "Question": "Consider the following defect report for a web-based shopping application: \n\nApplication: WebShop v0.99 \nDefect: Login button not working \n\nSteps to Reproduce: \nLaunch the website \nClick on the login button \n\nExpected result: The user should be redirected to the login page. \nActual result: The login button does not respond when clicked. \n\nSeverity: High \nPriority: Urgent \n\nWhat is the MOST important information that is missing from this report?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Name of the tester and date of the report"
+      },
+      {
+        "Label": "B",
+        "Text": "Test environment elements and their version numbers"
+      },
+      {
+        "Label": "C",
+        "Text": "Identification of the test object"
+      },
+      {
+        "Label": "D",
+        "Text": "Impact on the interests of stakeholders"
+      }
+    ],
+    "Answer": "B",
+    "Explanation": "B) Is correct. The important thing that is missing is the identification of the browser and device used for the testing. The browser and device information are important because such a defect can be browser- or device-specific. For example, a login button may work fine on one browser (or one version of a specific browser) but not on another. Therefore, the browser and device information can help the developers to reproduce the issue and find the root cause of the problem more quickly"
+  },
+  {
+    "ID": "39",
+    "ImageName": null,
+    "Question": "Tools from which of the following categories help with the organization of test cases, detected defects and configuration management?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Test execution and coverage tools"
+      },
+      {
+        "Label": "B",
+        "Text": "Test design and implementation tools"
+      },
+      {
+        "Label": "C",
+        "Text": "Defect management tools"
+      },
+      {
+        "Label": "D",
+        "Text": "Test management tools"
+      }
+    ],
+    "Answer": "D",
+    "Explanation": "D) Is correct. Test management tools increase the test process efficiency by facilitating the management of the software development lifecycle (SDLC), requirements, tests, defects, and configuration management"
+  },
+  {
+    "ID": "40",
+    "ImageName": null,
+    "Question": "Which of the following is MOST likely to be a benefit of test automation?",
+    "SelectionType": "Select ONE option.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "The capability of generating test cases without access to the test basis"
+      },
+      {
+        "Label": "B",
+        "Text": "The achievement of increased coverage through more objective assessment"
+      },
+      {
+        "Label": "C",
+        "Text": "The increase in test execution times available with higher processing power"
+      },
+      {
+        "Label": "D",
+        "Text": "The prevention of human errors through greater consistency and repeatability"
+      }
+    ],
+    "Answer": "D",
+    "Explanation": "D) Is correct. The prevention of human errors through greater consistency and repeatability is a benefit of test automation as test automation cannot suffer from human errors. For instance, it means that tests are consistently derived from requirements, test data is created in a systematic manner, and tests are executed by a tool in the same order with the same frequency"
+  }
+]

@@ -1,0 +1,1046 @@
+[
+  {
+    "Type": "ExamQuestion",
+    "ID": "1",
+    "ImageName": null,
+    "Term": "In what way does root cause analysis contribute to quality assurance?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Helps to better identify and correct the root cause of defects"
+      },
+      {
+        "Label": "B",
+        "Text": "Outlines how development teams can code faster"
+      },
+      {
+        "Label": "C",
+        "Text": "Specifies the desired root causes to be achieved by other teams"
+      },
+      {
+        "Label": "D",
+        "Text": "Contributes to the justification of future project funding"
+      }
+    ],
+    "CorrectAnswer": "A",
+    "Definition": "Root cause analysis can determine common causes of issues. Addressing common causes by process improvement can increase quality. \n\nB is incorrect because root cause analysis will not make the developers code faster, better maybe, not faster. \n\nC is incorrect because root causes generally are not good things that should be transferred between teams. \n\nD is not correct because it will not improve funding."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "2",
+    "ImageName": null,
+    "Term": "You are working in an Agile team where the testers are being accused of slowing down the process because of the time system testing is taking. Which of the following would be an approach that would better spread the skills of the team to complete the tasks?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Whole Team"
+      },
+      {
+        "Label": "B",
+        "Text": "Team Split"
+      },
+      {
+        "Label": "C",
+        "Text": "Behavior-Driven Development"
+      },
+      {
+        "Label": "D",
+        "Text": "Waterfall"
+      }
+    ],
+    "CorrectAnswer": "A",
+    "Definition": "The whole team approach would support the developers helping with the testing tasks rather than waiting for the testers to complete all the testing."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "3",
+    "ImageName": null,
+    "Term": "Which of the following is an example of debugging?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "A tester finds a defect and reports it"
+      },
+      {
+        "Label": "B",
+        "Text": "A tester retests a fix from the developer and finds a regression"
+      },
+      {
+        "Label": "C",
+        "Text": "A developer finds and fixes a defect"
+      },
+      {
+        "Label": "D",
+        "Text": "A developer performs unit testing"
+      }
+    ],
+    "CorrectAnswer": "C",
+    "Definition": "Debugging is what the developer does to identify the cause of the defect, analyze i and fix it. \n\nD may involve debugging, if the developer finds a defect, but the act of unit testing is not the same as debugging."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "4",
+    "ImageName": null,
+    "Term": "Which of the following is a true statement about exhaustive testing?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "It is a form of stress testing"
+      },
+      {
+        "Label": "B",
+        "Text": "It is not feasible except in the case of trivial software"
+      },
+      {
+        "Label": "C",
+        "Text": "It is commonly done with test automation"
+      },
+      {
+        "Label": "D",
+        "Text": "It is normally the responsibility of the developer during unit testing"
+      }
+    ],
+    "CorrectAnswer": "B",
+    "Definition": "Exhaustive testing, all combinations of inputs and preconditions, is not feasi unless the software is trivially simple. Otherwise, it would take too long and might not even be possible."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "5",
+    "ImageName": null,
+    "Term": "If you need to provide a report showing test case execution coverage of the requirements, what do you need to track?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Traceability between the test cases and the requirements"
+      },
+      {
+        "Label": "B",
+        "Text": "Coverage of the risk items by test case"
+      },
+      {
+        "Label": "C",
+        "Text": "Traceability between the requirements and the risk items"
+      },
+      {
+        "Label": "D",
+        "Text": "Coverage of the requirements by the test cases that have been designed"
+      }
+    ],
+    "CorrectAnswer": "A",
+    "Definition": "In order to show the test execution coverage of the requirements you will need traceability between the requirements and the test cases. As the test cases are executed this traceability can be used to record tests executed against the requirements. \n\nB is not correct because it’s looking for requirements coverage, not risk coverage. \n\nC is not correct because it’s looking for test execution, not risk items. \n\nD is not correct because it’s looking for test cases that have been executed, not just designed."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "6",
+    "ImageName": null,
+    "Term": "Who normally writes the test plan for a project?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "The project manager"
+      },
+      {
+        "Label": "B",
+        "Text": "The product owner"
+      },
+      {
+        "Label": "C",
+        "Text": "The test manager"
+      },
+      {
+        "Label": "D",
+        "Text": "The tester"
+      }
+    ],
+    "CorrectAnswer": "C",
+    "Definition": "Writing and updating the test plan is normally the responsibility of the test manag \n\nA, B and D may contribute to the test plan, but the overall responsibility belongs to the test manager."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "7",
+    "ImageName": null,
+    "Term": "Your team has conducted a quality risk analysis and has determined the likelihood, impact and mitigation plan for each identified risk. This information should be captured in what work product?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Test strategy"
+      },
+      {
+        "Label": "B",
+        "Text": "Test plan"
+      },
+      {
+        "Label": "C",
+        "Text": "Risk register"
+      },
+      {
+        "Label": "D",
+        "Text": "Risk plan"
+      }
+    ],
+    "CorrectAnswer": "C",
+    "Definition": ", per the syllabus. This information should be recorded in the risk register. The risk register should be referenced in the test plan for the project."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "8",
+    "ImageName": null,
+    "Term": "You are working with a junior tester who has been given a user story to test. They have created only one positive path test for the story. You know there are more areas that should be tested for this story, including negative scenarios. \n\nWhich of the following generic skills do they appear to be lacking?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Communication"
+      },
+      {
+        "Label": "B",
+        "Text": "Curiosity"
+      },
+      {
+        "Label": "C",
+        "Text": "Confidence"
+      },
+      {
+        "Label": "D",
+        "Text": "Creativity"
+      }
+    ],
+    "CorrectAnswer": "D",
+    "Definition": "It appears they are lacking in creativity in designing test scenario \n\nA is not correct because there is no indication that they are not communicating effectively. \n\nB is not correct, although if they were more curious, they might have done more investigation. \n\nC is not correct because it doesn’t appear that confidence is a factor, rather that they just aren’t approaching the test creation with much creativity."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "9",
+    "ImageName": null,
+    "Term": "Which of the following is an example of a good testing practice?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Different test levels should have specific test objectives"
+      },
+      {
+        "Label": "B",
+        "Text": "Testers should have development experience"
+      },
+      {
+        "Label": "C",
+        "Text": "Developers should determine the order of test execution in the test procedures"
+      },
+      {
+        "Label": "D",
+        "Text": "Test design should begin when the code is complete to avoid changes"
+      }
+    ],
+    "CorrectAnswer": "A",
+    "Definition": "This is a good testing practic \n\nB is not a requirement for many testers. \n\nC is not correct because this should be determined by the testers based on priority, risk, availability, etc. \n\nD is not correct because test design should start during code design and implementation."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "10",
+    "ImageName": null,
+    "Term": "Which development approach captures the requirements in a simple test case format?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "TDD"
+      },
+      {
+        "Label": "B",
+        "Text": "BDD"
+      },
+      {
+        "Label": "C",
+        "Text": "ATDD"
+      },
+      {
+        "Label": "D",
+        "Text": "TBD"
+      }
+    ],
+    "CorrectAnswer": "B",
+    "Definition": "Behavior-driven development uses the given/when/then format to defin cases. Those are then used as the requirements to develop the code."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "11",
+    "ImageName": null,
+    "Term": "Usability testing is an example of which type of testing?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Functional"
+      },
+      {
+        "Label": "B",
+        "Text": "Non-functional"
+      },
+      {
+        "Label": "C",
+        "Text": "Structural"
+      },
+      {
+        "Label": "D",
+        "Text": "Change-related"
+      }
+    ],
+    "CorrectAnswer": "B",
+    "Definition": "Usability is one of the non-functional test types according to ISO 25010."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "12",
+    "ImageName": null,
+    "Term": "You have been receiving daily builds from the developers. Even though they are documenting the fixes they are including in each build, you are finding that the fixes either aren’t in the build or are not working. What type of testing is best suited for finding these issues?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Unit testing"
+      },
+      {
+        "Label": "B",
+        "Text": "System testing"
+      },
+      {
+        "Label": "C",
+        "Text": "Confirmation testing"
+      },
+      {
+        "Label": "D",
+        "Text": "Regression testing"
+      }
+    ],
+    "CorrectAnswer": "C",
+    "Definition": "Confirmation testing will determine if a fix is present in a build and if it actually fix the defect it is supposed to fix. \n\nA is not correct because this would be conducted by the developer as they fix the issues. While it might catch a fix that doesn't work, it’s not likely to catch the check-in/build process that is excluding the fix from the build. \n\nB is not correct because system testing will take longer to pinpoint this problem and may result in more troubleshooting time when the problem is discovered again. \n\nD is not correct because this is the testing that is done to see if there have been any unintended changes in the software’s behavior."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "13",
+    "ImageName": null,
+    "Term": "Your team has just completed a retrospective. They have discussed what was successful and should be retained, and they discussed what improvements are needed. What else do they need to discuss in order to recognize process improvements?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "What will be retained or changed for the future"
+      },
+      {
+        "Label": "B",
+        "Text": "Who is to blame for the shortcomings of the project"
+      },
+      {
+        "Label": "C",
+        "Text": "How much money was spent that could have been saved"
+      },
+      {
+        "Label": "D",
+        "Text": "Why changes were not made earlier in the project"
+      }
+    ],
+    "CorrectAnswer": "A",
+    "Definition": "It’s great to gather the information, but in order for change to really be made, it has to be planned for implementation in future sprints/releases/projects. \n\nB is not correct because retrospectives are not about blaming. \n\nC is not part of a retrospective, although this information may be gathered by the project manager. \n\nD is also tending toward blaming but is something that should be considered as it may impact the ability to implement future changes."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "14",
+    "ImageName": null,
+    "Term": "Your organization has decided to implement DevOps. One of the biggest concerns from the operations people is that there have been ongoing performance issues in production. How will implementing DevOps and CI/CD help with this problem?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "It won’t - the problem needs to be addressed during design"
+      },
+      {
+        "Label": "B",
+        "Text": "Performance testing can be integrated into the CI/CD pipeline to test it incrementally and repeatedly throughout development"
+      },
+      {
+        "Label": "C",
+        "Text": "Performance testing will be the main focus of the system integration testing, after the code has been delivered to the test environment"
+      },
+      {
+        "Label": "D",
+        "Text": "Performance testing experts will be used to conduct the performance testing in an isolated environment which is developed using Infrastructure as Code"
+      }
+    ],
+    "CorrectAnswer": "B",
+    "Definition": "With a CI/CD implementation, performance testing can be implemented througho the pipeline, starting with the unit testing and continuing through to the fully developed product. CI/CD will also help ensure that the delivery is into the proper environments that can support the various types of testing. \n\nA is not correct. The problem probably does need to be addressed during design, but it needs to be tested throughout the pipeline. \n\nC is not correct because testing performance only in SIT doesn’t leverage the capabilities of the testing pipeline. \n\nD is not correct because performance testing can be conducted early and often through the pipeline, although a final test in an isolated environment may be needed as well."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "15",
+    "ImageName": null,
+    "Term": "Which of the following techniques is a form of static testing?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Error guessing"
+      },
+      {
+        "Label": "B",
+        "Text": "Automated regression testing"
+      },
+      {
+        "Label": "C",
+        "Text": "Providing inputs and examining the resulting outputs"
+      },
+      {
+        "Label": "D",
+        "Text": "Code review"
+      }
+    ],
+    "CorrectAnswer": "D",
+    "Definition": "D is correct, per syllabus. \n\nA, B and C are all forms of dynamic testing."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "16",
+    "ImageName": null,
+    "Term": "You are frequently asked to participate in reviews of requirements. Unfortunately, you usually receive the document to be reviewed the night before the review meeting will be held. This is resulting in your not doing a thorough review and having to work significant overtime to get the review done. What review success factor is missing from this process?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Management support for the overall review process"
+      },
+      {
+        "Label": "B",
+        "Text": "Reviewing only small chunks at a time"
+      },
+      {
+        "Label": "C",
+        "Text": "Training for the proper performance in the meetings"
+      },
+      {
+        "Label": "D",
+        "Text": "Allowing adequate time to conduct the review"
+      }
+    ],
+    "CorrectAnswer": "D",
+    "Definition": "The reviewers are not being given adequate time to conduct the review \n\nA is not correct but might be an issue given that this is a repeated problem and could indicate that the schedules are not realistic. \n\nB is not correct because there’s no indication that the work product is too big, just that it’s being delivered too late. \n\nC is not correct because the problem is not with the meetings."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "17",
+    "ImageName": null,
+    "Term": "What is the main difference between static and dynamic testing?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Static testing is performed by developers; dynamic testing is performed by testers"
+      },
+      {
+        "Label": "B",
+        "Text": "Manual test cases are used for dynamic testing; automated tests are used for static testing"
+      },
+      {
+        "Label": "C",
+        "Text": "Static testing must be executed before dynamic testing"
+      },
+      {
+        "Label": "D",
+        "Text": "Dynamic testing requires executing the software; the software is not executed during static testing"
+      }
+    ],
+    "CorrectAnswer": "D",
+    "Definition": "Dynamic testing is done while the software is actually running whereas static testing depends on examining the software while it is not running. \n\nA is not correct because both types of testing can be done by both developers and testers. \n\nB is not correct because manual and automated tests can be used for dynamic testing. \n\nC is not correct because static testing can occur at any time although it is usually done before dynamic testing."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "18",
+    "ImageName": null,
+    "Term": "If a review session is led by the author of the work product, what type of review is it?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Ad hoc"
+      },
+      {
+        "Label": "B",
+        "Text": "Walkthrough"
+      },
+      {
+        "Label": "C",
+        "Text": "Inspection"
+      },
+      {
+        "Label": "D",
+        "Text": "Audit"
+      }
+    ],
+    "CorrectAnswer": "B",
+    "Definition": "In a walkthrough, the author normally leads the review session \n\nA is not correct as this is not normally an organized session. \n\nC is not correct because an inspection is normally led by the facilitator (moderator). \n\nD is not correct because an audit is usually led by a third party."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "19",
+    "ImageName": null,
+    "Term": "If test cases are derived from looking at the code, what type of test design technique is being used?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Black-box"
+      },
+      {
+        "Label": "B",
+        "Text": "White-box"
+      },
+      {
+        "Label": "C",
+        "Text": "Specification-based"
+      },
+      {
+        "Label": "D",
+        "Text": "Behavior-based"
+      }
+    ],
+    "CorrectAnswer": "B",
+    "Definition": "A, C and D are all black-box and use the specifications or requirements for the test design."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "20",
+    "ImageName": null,
+    "Term": "How is statement coverage determined?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Number of test decision points divided by the number of test cases"
+      },
+      {
+        "Label": "B",
+        "Text": "Number of branches tested divided by the total number of executable statements"
+      },
+      {
+        "Label": "C",
+        "Text": "Number of possible test case outcomes divided by the total number of function points"
+      },
+      {
+        "Label": "D",
+        "Text": "Number of executable statements tested divided by the total number of executable statements"
+      }
+    ],
+    "CorrectAnswer": "D",
+    "Definition": "D is correct, per syllabus as each tested statement is considered to be exercised \n\nA, B and C are not valid measures."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "21",
+    "ImageName": null,
+    "Term": "You are working on a project with very tight deadlines. The code is being developed but is not yet executable. What type of testing could you apply that would help find defects now?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Black-box"
+      },
+      {
+        "Label": "B",
+        "Text": "White-box"
+      },
+      {
+        "Label": "C",
+        "Text": "Experience-based"
+      },
+      {
+        "Label": "D",
+        "Text": "Factor-based"
+      }
+    ],
+    "CorrectAnswer": "B",
+    "Definition": "You have code that can be structurally reviewed for items such as the pro handling of branching. \n\nA and C are not correct because nothing can be executed yet. D is not correct because it’s not a type of testing."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "22",
+    "ImageName": null,
+    "Term": "If you are using error guessing to target your testing, which type of testing are you doing?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Specification-based"
+      },
+      {
+        "Label": "B",
+        "Text": "Structure-based"
+      },
+      {
+        "Label": "C",
+        "Text": "Experience-based"
+      },
+      {
+        "Label": "D",
+        "Text": "Reference-based"
+      }
+    ],
+    "CorrectAnswer": "C",
+    "Definition": "This is an experience-based technique."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "23",
+    "ImageName": null,
+    "Term": "When exploratory testing is conducted using time-boxing and test charters, what is it called?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Schedule-based testing"
+      },
+      {
+        "Label": "B",
+        "Text": "Session-based testing"
+      },
+      {
+        "Label": "C",
+        "Text": "Risk-based testing"
+      },
+      {
+        "Label": "D",
+        "Text": "Formal chartering"
+      }
+    ],
+    "CorrectAnswer": "B",
+    "Definition": "This is often called session-based testing and may use session \n\nA is not correct. Exploratory doesn’t usually comply to schedules but rather allows the tester to explore and learn about the software. Coverage is difficult to assess which is one of the reasons it is difficult to match the time spent to the amount accomplished. \n\nC is not correct. This may be one of the forms of risk-based testing, but it is not entirely RBT. \n\nD is not correct as this is not actually a testing term."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "24",
+    "ImageName": null,
+    "Term": "You are writing some acceptance criteria for a story. You have decided to make a list of all the likely inputs to the code and the expected outputs based on those inputs. What format are you using?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "IPO chart"
+      },
+      {
+        "Label": "B",
+        "Text": "Acceptance-based"
+      },
+      {
+        "Label": "C",
+        "Text": "Rules-oriented"
+      },
+      {
+        "Label": "D",
+        "Text": "Behavior-driven"
+      }
+    ],
+    "CorrectAnswer": "C",
+    "Definition": "This is a rules-oriented form \n\nA is not correct because, although you are tracking the inputs and outputs, you are not tracking the processing. \n\nB is not correct because this is not a recognized format. \n\nD is not correct because the given/when/then format is referred to as scenario-oriented."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "25",
+    "ImageName": null,
+    "Term": "You are testing a banking application that allows a customer to withdraw 20, 100 or 500 dollars in a single transaction. The values are chosen from a drop-down list and no other values may be entered. How many equivalence partitions need to be tested to achieve 100% equivalence partition coverage?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "1"
+      },
+      {
+        "Label": "B",
+        "Text": "2"
+      },
+      {
+        "Label": "C",
+        "Text": "3"
+      },
+      {
+        "Label": "D",
+        "Text": "4"
+      }
+    ],
+    "CorrectAnswer": "D",
+    "Definition": "The values to be tested are 20, 100, 500 and no selection."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "26",
+    "ImageName": "Exam_2_ID_26.jpg",
+    "Term": "You are testing a scale system that determines shipping rates for a regional web-based auto parts distributor. Due to regulations, shipments cannot exceed 100 lbs. You want to include boundary value analysis as part of your black-box test design. \n\nHow many tests will you need to execute to achieve 100% two-value boundary value analysis?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "4"
+      },
+      {
+        "Label": "B",
+        "Text": "8"
+      },
+      {
+        "Label": "C",
+        "Text": "10"
+      },
+      {
+        "Label": "D",
+        "Text": "12"
+      }
+    ],
+    "CorrectAnswer": "C",
+    "Definition": "2 per valid weight range plus one for a negative weight and one for a weig exceeding 100 lbs (-1, 0, 10, 11, 25, 26, 50, 51, 100, 101)."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "27",
+    "ImageName": "Exam_2_ID_27.jpg",
+    "Term": "Which of the following is the correct decision table for the following pseudocode for ordering a humburger? \n\nNote: if you add or delete items from the basic burger, you longer get the basic burger.",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": " ",
+        "ImageName": "Exam_2_variant_A_ID_27.jpg"
+      },
+      {
+        "Label": "B",
+        "Text": " ",
+        "ImageName": "Exam_2_variant_B_ID_27.jpg"
+      },
+      {
+        "Label": "C",
+        "Text": " ",
+        "ImageName": "Exam_2_variant_C_ID_27.jpg"
+      },
+      {
+        "Label": "D",
+        "Text": " ",
+        "ImageName": "Exam_2_variant_D_ID_27.jpg"
+      }
+    ],
+    "CorrectAnswer": "B",
+    "Definition": "B is correct. \n\nA is correct because it assumes you can't add and delete items from a burger. \n\nC is not correct because it makes the same assumption as A and has duplicate test \n\nD is not correct because the Results are wrong for the first four tests. "
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "28",
+    "ImageName": null,
+    "Term": "You are testing an e-commerce transaction that has the following states and transitions: \n\n1. Login (invalid) > Login \n2. Login > Search \n3. Search > Search \n4. Search > Shopping Cart \n5. Shopping Cart > Search \n6. Shopping Cart > Checkout \n7. Checkout > Search \n8. Checkout > Logout \n\nFor a state transition diagram, how many transitions should be shown?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "4"
+      },
+      {
+        "Label": "B",
+        "Text": "6"
+      },
+      {
+        "Label": "C",
+        "Text": "8"
+      },
+      {
+        "Label": "D",
+        "Text": "16"
+      }
+    ],
+    "CorrectAnswer": "C",
+    "Definition": "There are 8 transitions that should be shown in the state transition diagram as explained in the question. \n\nA is not correct as this is only checking one transition from each state. \n\nB is not correct because this is probably excluding login > login and search > search. \n\nD is not correct because it is checking the invalid transitions as well and those would be included in a state table, not a state transition diagram. \n\nThese are: \nLogin (invalid) > Login \nLogin > Search \nLogin > Shopping Cart (invalid transition) \nLogin > Checkout (invalid transition) \nSearch > Login (invalid transition) \nSearch > Search \nSearch > Shopping Cart \nSearch > Checkout (invalid transition) \nShopping Cart > Login (invalid transition) \nShopping Cart > Search \nShopping Cart > Shopping Cart (invalid transition) \nShopping Cart > Checkout \nCheckout > Login (invalid transition) \nCheckout > Search \nCheckout > Shopping Cart (invalid transition) \nCheckout > Logout."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "29",
+    "ImageName": null,
+    "Term": "You are creating test cases for the following story, applying the ATDD approach. \n\nAs a hotel owner \nI want to reserve all the rooms on a floor before moving to the next floor \nSo I can maximize the efficiency of the housekeeping staff \n\nYou have decided to apply boundary value analysis to this requirement and have identified the following partitions for the occupancy of a floor: \n\n0 | 1 - floor full | overbooked \n\nYou also want to be sure that the software is usable by the staff and that it performs quickly in determining which floors have availability. \n\nYou have designed the following test cases: \n1. Test with 1 occupant on the floor \n2. Test with the floor full and ensure the next floor is made available for bookings \n3. Test with 0 occupants on the floor and ensure that floor is only available when lower floors are fully booked \n4. Test the usability to ensure hotel staff will find the software usable \n5. Test for response time when the system is at average load and the hotel is 80% occupied \n\nWhat are you missing?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "A test with a floor partially occupied but not fully occupied"
+      },
+      {
+        "Label": "B",
+        "Text": "A test for performance"
+      },
+      {
+        "Label": "C",
+        "Text": "A test for trying to assign someone to a floor that is full"
+      },
+      {
+        "Label": "D",
+        "Text": "A test for usability"
+      }
+    ],
+    "CorrectAnswer": "C",
+    "Definition": "The test that is missing is to try to see if you can allocate someone to a floor that i already fully booked. This is a negative test and should result in an error. \n\nA is covered by testing with one occupant. \n\nB and D are covered."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "30",
+    "ImageName": null,
+    "Term": "Level of risk is determined by which of the following?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Likelihood and impact"
+      },
+      {
+        "Label": "B",
+        "Text": "Priority and risk rating"
+      },
+      {
+        "Label": "C",
+        "Text": "Probability and practicality"
+      },
+      {
+        "Label": "D",
+        "Text": "Risk identification and mitigation"
+      }
+    ],
+    "CorrectAnswer": "A",
+    "Definition": "The combination of likelihood and impact is normally used to determine the ov risk level (sometimes called the risk priority number)."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "31",
+    "ImageName": null,
+    "Term": "Which of the following is an example of a good exit criterion from system testing?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "All tests should be completed"
+      },
+      {
+        "Label": "B",
+        "Text": "The project budget should be spent"
+      },
+      {
+        "Label": "C",
+        "Text": "All defects should be fixed"
+      },
+      {
+        "Label": "D",
+        "Text": "All severity 1 defects must be resolved"
+      }
+    ],
+    "CorrectAnswer": "D",
+    "Definition": "D is correct. This is measurable and clear. \n\nA is not correct because completed is not a clear term and this might not be a reasonable goal and should is not a clear goal. \n\nB is not correct because spending the budget is generally not the goal and you wouldn't expect the budget to be spent when system testing is done because that leaves no money for acceptance testing or roll out. \n\nC is not correct because this is a should and also probably is not realistic"
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "32",
+    "ImageName": null,
+    "Term": "You are working on a project and have determined that exploratory testing is the best test technique to apply. Which testing quadrant are you using?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Q1"
+      },
+      {
+        "Label": "B",
+        "Text": "Q2"
+      },
+      {
+        "Label": "C",
+        "Text": "Q3"
+      },
+      {
+        "Label": "D",
+        "Text": "Q4"
+      }
+    ],
+    "CorrectAnswer": "C",
+    "Definition": "Exploratory testing belongs to quadrant 3."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "33",
+    "ImageName": null,
+    "Term": "Which of the following is a project risk?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "A defect that is causing a performance issue"
+      },
+      {
+        "Label": "B",
+        "Text": "A duplicate requirement"
+      },
+      {
+        "Label": "C",
+        "Text": "An issue with a data conversion procedure"
+      },
+      {
+        "Label": "D",
+        "Text": "A schedule that requires work during Christmas shutdown"
+      }
+    ],
+    "CorrectAnswer": "D",
+    "Definition": "D is correct, this is a risk to the entire projec \n\nA, B and C are product risks."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "34",
+    "ImageName": null,
+    "Term": "You have just completed testing on a major ERP implementation. The project has taken two years and is now ready for final approval before go-live. What test documentation should be produced at this time?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Formal test summary report"
+      },
+      {
+        "Label": "B",
+        "Text": "Testing team task board"
+      },
+      {
+        "Label": "C",
+        "Text": "Email to the team congratulating them on their success"
+      },
+      {
+        "Label": "D",
+        "Text": "Burn down chart"
+      }
+    ],
+    "CorrectAnswer": "A",
+    "Definition": "At this point in the project, the formal test summary report should be prepared \n\nB and D are used for information communication during the project work. \n\nC might be premature as final approval has not yet been obtained and this is not test documentation."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "35",
+    "ImageName": null,
+    "Term": "You are working on a project that is releasing software to the test team in iterations. In iteration 3 you identified a failure. The developer found and fixed the defect and released the fix in iteration 4. You confirmed the fix and closed the defect report. You are now testing iteration 7 and the failure has occurred again. You have talked to the developer and he doesn’t know how or when the failure came back and has asked you to investigate. \n\nHow can configuration management help you gather more information on this failure?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "You can see what changed in iteration 4 to fix the problem"
+      },
+      {
+        "Label": "B",
+        "Text": "You can reload and retest iterations 5 and 6 to see where the problem was re- introduced"
+      },
+      {
+        "Label": "C",
+        "Text": "You can review all the code changes that have occurred since iteration 4 to see what might have broken it"
+      },
+      {
+        "Label": "D",
+        "Text": "You can improve the regression testing to ensure the failure is caught earlier"
+      }
+    ],
+    "CorrectAnswer": "B",
+    "Definition": "Because you have configuration management, you should be able to obtain and reinstall the code from iterations 5 and 6 and see where the problem was re-introduced. \n\nA is not correct as that would have helped with the initial confirmation test and maybe regression testing, but it doesn’t help with the current problem. \n\nC is the responsibility of the developer. \n\nD is a good idea but won’t help with the current situation."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "36",
+    "ImageName": "Exam_2_ID_36.jpg",
+    "Term": "You are estimating the testing time required for a new project. You have gathered information from three experts and they have given you the following numbers in days: Expert Optimistic Likely Pessimistic Expert 1 20 40 60 Expert 2 40 55 75 Expert 3 30 70 90 Average 30 55 75 Using the average numbers from the table above and applying the three-point estimation technique, what is the estimate?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "325 ± 45"
+      },
+      {
+        "Label": "B",
+        "Text": "81.25 ± 8"
+      },
+      {
+        "Label": "C",
+        "Text": "54.17 ± 7.5"
+      },
+      {
+        "Label": "D",
+        "Text": "40 ± 2"
+      }
+    ],
+    "CorrectAnswer": "C",
+    "Definition": "The formula is (Optimistic + 4(Likely) + Pessimistic)/6 so the answer is (30+220+75)/6 = 54.17 and the standard deviation is (75-30)/6 which is 7.5."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "37",
+    "ImageName": "Exam_2_ID_37.jpg",
+    "Term": "Consider the following test cases that are used to test an accounting system: \n\nGiven this information, what is the proper order in which to execute these test cases?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "5, 1, 3, 2, 4"
+      },
+      {
+        "Label": "B",
+        "Text": "1, 2, 4, 5, 3"
+      },
+      {
+        "Label": "C",
+        "Text": "1, 3, 2, 4, 5"
+      },
+      {
+        "Label": "D",
+        "Text": "3, 4, 5, 1, 2"
+      }
+    ],
+    "CorrectAnswer": "B",
+    "Definition": "The goal is to run the highest priority tests as soon as possible. Dependency has to be considered in order for the tests to actually be executed. In order to get the highest priority test run as soon as possible, the correct order is as follows: test 1 has to go first since everything else is dependent on it. Then we need to do 2 so we can do 4 and 5 (the highest priority test) and then 3 is last because 5 is not dependent on it. \n\nA is not correct because 5 cannot be run first. \n\nC is not correct because it does not run 5 as soon as possible; it defers it until after 3 is run. \n\nD is not correct because 3 can’t be run first as it requires 1 and 2."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "38",
+    "ImageName": null,
+    "Term": "You have received the following description section in a defect report: \n\nThe report executed per the attached steps, but the data was incorrect. For example, the information in column 1 was wrong. See the attached screenshot. This report is critical to the users and they will be unable to do their jobs without this information. \n\nWhat is the biggest problem with this defect report?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "The developer won’t know how important the problem is"
+      },
+      {
+        "Label": "B",
+        "Text": "The developer won’t know how to repeat the test"
+      },
+      {
+        "Label": "C",
+        "Text": "The developer won’t be able to see what the tester is saying is wrong"
+      },
+      {
+        "Label": "D",
+        "Text": "The developer won’t know what the tester expected to see"
+      }
+    ],
+    "CorrectAnswer": "D",
+    "Definition": "From this information, the developer only knows the tester thinks the information i wrong, but it’s not clear what was expected. \n\nA is incorrect because, although vague, the incident report seems to indicate this is an important problem. \n\nB is incorrect because the steps are attached (or so it says). \n\nC is incorrect because the screen shot should indicate column 1 that is wrong."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "39",
+    "ImageName": null,
+    "Term": "What is the primary purpose of a test execution tool?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "It runs automated test scripts to test the test object"
+      },
+      {
+        "Label": "B",
+        "Text": "It automatically records defects in the defect tracking system"
+      },
+      {
+        "Label": "C",
+        "Text": "It analyzes code to determine if there are any coding standard violations"
+      },
+      {
+        "Label": "D",
+        "Text": "It tracks test cases, defects and requirements traceability"
+      }
+    ],
+    "CorrectAnswer": "A",
+    "Definition": "This is the primary purpose of the test execution too \n\nB may be something the tool can do, but this is not the primary purpose. \n\nC is a static analysis tool and D is a test management tool."
+  },
+  {
+    "Type": "ExamQuestion",
+    "ID": "40",
+    "ImageName": null,
+    "Term": "Which of the following is a risk with test automation?",
+    "Variants": [
+      {
+        "Label": "A",
+        "Text": "Using an automation tool that will not be supported in the future"
+      },
+      {
+        "Label": "B",
+        "Text": "Developing test automation for particularly tedious manual testing areas"
+      },
+      {
+        "Label": "C",
+        "Text": "Using technical testers to implement the automation"
+      },
+      {
+        "Label": "D",
+        "Text": "Developing automated reporting"
+      }
+    ],
+    "CorrectAnswer": "A",
+    "Definition": "That is a known risk with test automation because it will be dependent upon the too used for implementation and that tool might fall out of support by the vendor or the community. \n\nB, C and D are expected results from automation and are not risks."
+  }
+]

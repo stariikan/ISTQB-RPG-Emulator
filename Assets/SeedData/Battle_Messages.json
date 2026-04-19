@@ -1,0 +1,51 @@
+{
+  "HitActions": [
+    "You threw a heavy office chair at the {0}!",
+    "You swung your mechanical keyboard like a broadsword!",
+    "You spilled boiling hot coffee on the {0}!",
+    "You unleashed a flurry of rapid-fire clicks!",
+    "You executed a flawless roundhouse kick!",
+    "You cast a level 5 logic fireball!",
+    "You slammed a thick manual into the {0}'s face!",
+    "You threw a stapler with sniper precision!",
+    "You charged headfirst with a rolling whiteboard!",
+    "You fired a barrage of rubber bands!"
+  ],
+  "HitReactions": [
+    "It reels backward in pain!",
+    "A critical strike! The {0} staggers.",
+    "The {0} shrieks and drops its guard!",
+    "Direct hit! It looks severely weakened.",
+    "Armor shatters off the {0}!",
+    "It gets knocked flat on its back!",
+    "The {0} roars in frustration!",
+    "It tries to block, but the attack breaks through!"
+  ],
+  "MissActions": [
+    "You tripped over an extension cord!",
+    "Your attack went completely wide!",
+    "You accidentally hit the wrong button!",
+    "You hesitated for a split second!",
+    "Your weapon slipped out of your sweaty hands!",
+    "You closed your eyes right before swinging!",
+    "You got distracted by a notification!"
+  ],
+  "MonsterEvades": [
+    "The {0} nimbly dodged out of the way.",
+    "Your attack bounced harmlessly off its thick hide.",
+    "The {0} vanished into the shadows.",
+    "It blocked the attack with a massive claw.",
+    "The {0} parried your strike effortlessly.",
+    "It sidestepped and watched you fall past.",
+    "The {0} caught your weapon in mid-air!"
+  ],
+  "MonsterCounters": [
+    "It laughs menacingly at your attempt.",
+    "It counters with a swift tail whip!",
+    "The {0} stares at you in disappointment.",
+    "It unleashes a deafening roar!",
+    "It strikes back, resetting your combo!",
+    "It hits you with a confusion spell!",
+    "The {0} knocks you back to your desk!"
+  ]
+}

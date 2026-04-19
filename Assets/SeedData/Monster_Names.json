@@ -1,0 +1,404 @@
+{
+  "monsters": [
+    {
+      "Name": "Shadow Drake",
+      "Icon": "🐉"
+    },
+    {
+      "Name": "Crimson Minotaur",
+      "Icon": "🐂"
+    },
+    {
+      "Name": "Abyssal Leviathan",
+      "Icon": "🐋"
+    },
+    {
+      "Name": "Iron Golem",
+      "Icon": "🤖"
+    },
+    {
+      "Name": "Venomous Basilisk",
+      "Icon": "🦎"
+    },
+    {
+      "Name": "Frost Giant",
+      "Icon": "🥶"
+    },
+    {
+      "Name": "Ember Serpent",
+      "Icon": "🐍"
+    },
+    {
+      "Name": "Obsidian Gargoyle",
+      "Icon": "🦇"
+    },
+    {
+      "Name": "Bone Wraith",
+      "Icon": "💀"
+    },
+    {
+      "Name": "Spectral Griffin",
+      "Icon": "🦅"
+    },
+    {
+      "Name": "Swamp Hag",
+      "Icon": "🧙‍♀️"
+    },
+    {
+      "Name": "Cave Troll",
+      "Icon": "🧌"
+    },
+    {
+      "Name": "Desert Manticore",
+      "Icon": "🦁"
+    },
+    {
+      "Name": "Thunder Roc",
+      "Icon": "⚡"
+    },
+    {
+      "Name": "Crystal Arachnid",
+      "Icon": "🕷️"
+    },
+    {
+      "Name": "Blood Ogre",
+      "Icon": "👹"
+    },
+    {
+      "Name": "Nightfiend",
+      "Icon": "😈"
+    },
+    {
+      "Name": "Astral Wyrm",
+      "Icon": "🌌"
+    },
+    {
+      "Name": "Plague Rat",
+      "Icon": "🐀"
+    },
+    {
+      "Name": "Dire Wolf",
+      "Icon": "🐺"
+    },
+    {
+      "Name": "Lava Hound",
+      "Icon": "🔥"
+    },
+    {
+      "Name": "Skeleton Warrior",
+      "Icon": "☠️"
+    },
+    {
+      "Name": "Ghostly Knight",
+      "Icon": "👻"
+    },
+    {
+      "Name": "Sapphire Dragon",
+      "Icon": "💎"
+    },
+    {
+      "Name": "Wind Elemental",
+      "Icon": "🌪️"
+    },
+    {
+      "Name": "Earth Elemental",
+      "Icon": "🪨"
+    },
+    {
+      "Name": "Fire Elemental",
+      "Icon": "🔥"
+    },
+    {
+      "Name": "Water Elemental",
+      "Icon": "🌊"
+    },
+    {
+      "Name": "Arcane Lich",
+      "Icon": "🧟‍♂️"
+    },
+    {
+      "Name": "Rotting Zombie",
+      "Icon": "🧟"
+    },
+    {
+      "Name": "Vengeful Spirit",
+      "Icon": "👻"
+    },
+    {
+      "Name": "Savage Orc",
+      "Icon": "🧌"
+    },
+    {
+      "Name": "Goblin Scavenger",
+      "Icon": "👺"
+    },
+    {
+      "Name": "Bog Monster",
+      "Icon": "🦠"
+    },
+    {
+      "Name": "Forest Treant",
+      "Icon": "🌳"
+    },
+    {
+      "Name": "Ice Harpy",
+      "Icon": "❄️"
+    },
+    {
+      "Name": "Doom Harbinger",
+      "Icon": "👁️"
+    },
+    {
+      "Name": "Sunken Siren",
+      "Icon": "🧜‍♀️"
+    },
+    {
+      "Name": "Hollow Armor",
+      "Icon": "🛡️"
+    },
+    {
+      "Name": "Corrupted Unicorn",
+      "Icon": "🦄"
+    },
+    {
+      "Name": "Moonlit Banshee",
+      "Icon": "🧛‍♀️"
+    },
+    {
+      "Name": "Noxious Slime",
+      "Icon": "🦠"
+    },
+    {
+      "Name": "Cave Bat",
+      "Icon": "🦇"
+    },
+    {
+      "Name": "Stone Basilisk",
+      "Icon": "🗿"
+    },
+    {
+      "Name": "Magma Crawler",
+      "Icon": "🌋"
+    },
+    {
+      "Name": "Cursed Mummy",
+      "Icon": "🏺"
+    },
+    {
+      "Name": "Phantom Assassin",
+      "Icon": "🥷"
+    },
+    {
+      "Name": "Wild Centaur",
+      "Icon": "🐴"
+    },
+    {
+      "Name": "Venomous Manticore",
+      "Icon": "🦂"
+    },
+    {
+      "Name": "Shadow Stalker",
+      "Icon": "👤"
+    },
+    {
+      "Name": "Giant Centipede",
+      "Icon": "🐛"
+    },
+    {
+      "Name": "Mutated Toad",
+      "Icon": "🐸"
+    },
+    {
+      "Name": "Frost Wyrm",
+      "Icon": "🧊"
+    },
+    {
+      "Name": "Hellfire Imp",
+      "Icon": "👿"
+    },
+    {
+      "Name": "Void Terror",
+      "Icon": "🌌"
+    },
+    {
+      "Name": "Necrotic Behemoth",
+      "Icon": "🦖"
+    },
+    {
+      "Name": "Sand Worm",
+      "Icon": "🪱"
+    },
+    {
+      "Name": "Ironclad Cyclops",
+      "Icon": "👁️"
+    },
+    {
+      "Name": "Feral Ghoul",
+      "Icon": "🧟"
+    },
+    {
+      "Name": "Bloodthirsty Vampire",
+      "Icon": "🧛"
+    },
+    {
+      "Name": "Swamp Lurker",
+      "Icon": "🐊"
+    },
+    {
+      "Name": "Crystal Golem",
+      "Icon": "🧊"
+    },
+    {
+      "Name": "Storm Elemental",
+      "Icon": "🌩️"
+    },
+    {
+      "Name": "Dread Knight",
+      "Icon": "🤺"
+    },
+    {
+      "Name": "Acid Spit Crawler",
+      "Icon": "🐛"
+    },
+    {
+      "Name": "Crazed Cultist",
+      "Icon": "🦹"
+    },
+    {
+      "Name": "Wailing Banshee",
+      "Icon": "😭"
+    },
+    {
+      "Name": "Forest Nymph",
+      "Icon": "🧚‍♀️"
+    },
+    {
+      "Name": "Mountain Troll",
+      "Icon": "🧌"
+    },
+    {
+      "Name": "Sea Serpent",
+      "Icon": "🐍"
+    },
+    {
+      "Name": "Abyssal Horror",
+      "Icon": "🦑"
+    },
+    {
+      "Name": "Feral Chimera",
+      "Icon": "🦁"
+    },
+    {
+      "Name": "Blight Walker",
+      "Icon": "🧟‍♂️"
+    },
+    {
+      "Name": "Nether Demon",
+      "Icon": "👺"
+    },
+    {
+      "Name": "Shadow Panther",
+      "Icon": "🐆"
+    },
+    {
+      "Name": "Toxic Spore",
+      "Icon": "🍄"
+    },
+    {
+      "Name": "Glacier Golem",
+      "Icon": "🏔️"
+    },
+    {
+      "Name": "Infernal Hellkite",
+      "Icon": "🐉"
+    },
+    {
+      "Name": "Rabid Werewolf",
+      "Icon": "🐺"
+    },
+    {
+      "Name": "Stone Gargoyle",
+      "Icon": "🗿"
+    },
+    {
+      "Name": "Cursed Phalanx",
+      "Icon": "🛡️"
+    },
+    {
+      "Name": "Vile Harpy",
+      "Icon": "🦅"
+    },
+    {
+      "Name": "Cave Crawler",
+      "Icon": "🪲"
+    },
+    {
+      "Name": "Starved Yeti",
+      "Icon": "🦍"
+    },
+    {
+      "Name": "Crystal Drake",
+      "Icon": "🐉"
+    },
+    {
+      "Name": "Obsidian Scorpion",
+      "Icon": "🦂"
+    },
+    {
+      "Name": "Phantom Duelist",
+      "Icon": "🤺"
+    },
+    {
+      "Name": "Savage Gnoll",
+      "Icon": "🐕"
+    },
+    {
+      "Name": "Mutated Rat",
+      "Icon": "🐀"
+    },
+    {
+      "Name": "Fire Salamander",
+      "Icon": "🦎"
+    },
+    {
+      "Name": "Deep Sea Kraken",
+      "Icon": "🦑"
+    },
+    {
+      "Name": "Toxic Miasma",
+      "Icon": "💨"
+    },
+    {
+      "Name": "Bone Chimera",
+      "Icon": "🦴"
+    },
+    {
+      "Name": "Spectral Hound",
+      "Icon": "🐕‍🦺"
+    },
+    {
+      "Name": "Iron Behemoth",
+      "Icon": "🦏"
+    },
+    {
+      "Name": "Frostbite Spider",
+      "Icon": "🕷️"
+    },
+    {
+      "Name": "Ash Demon",
+      "Icon": "🌋"
+    },
+    {
+      "Name": "Cursed Sorcerer",
+      "Icon": "🧙‍♂️"
+    },
+    {
+      "Name": "Bloodfang Boar",
+      "Icon": "🐗"
+    },
+    {
+      "Name": "Eldritch Abomination",
+      "Icon": "🐙"
+    }
+  ]
+}

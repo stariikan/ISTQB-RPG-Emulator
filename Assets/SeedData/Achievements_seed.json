@@ -1,0 +1,202 @@
+[
+  {
+    "Id": 1,
+    "Category": "Glossary",
+    "Icon": "📖",
+    "Title": "First Words",
+    "Description": "Learn 10 Glossary Terms.",
+    "TargetProgress": 10
+  },
+  {
+    "Id": 2,
+    "Category": "Glossary",
+    "Icon": "📚",
+    "Title": "Vocab Builder",
+    "Description": "Learn 50 Glossary Terms.",
+    "TargetProgress": 50
+  },
+  {
+    "Id": 3,
+    "Category": "Glossary",
+    "Icon": "🗣️",
+    "Title": "Fluent Tester",
+    "Description": "Learn 100 Glossary Terms.",
+    "TargetProgress": 100
+  },
+  {
+    "Id": 4,
+    "Category": "Glossary",
+    "Icon": "🗂️",
+    "Title": "Walking Dictionary",
+    "Description": "Learn 200 Glossary Terms.",
+    "TargetProgress": 200
+  },
+  {
+    "Id": 5,
+    "Category": "Glossary",
+    "Icon": "👑",
+    "Title": "Glossary Grandmaster",
+    "Description": "Learn 350 Glossary Terms.",
+    "TargetProgress": 350
+  },
+  {
+    "Id": 6,
+    "Category": "Syllabus",
+    "Icon": "📝",
+    "Title": "Chapter 1",
+    "Description": "Read 5 Syllabus Concepts.",
+    "TargetProgress": 5
+  },
+  {
+    "Id": 7,
+    "Category": "Syllabus",
+    "Icon": "🤓",
+    "Title": "Bookworm",
+    "Description": "Read 20 Syllabus Concepts.",
+    "TargetProgress": 20
+  },
+  {
+    "Id": 8,
+    "Category": "Syllabus",
+    "Icon": "🧠",
+    "Title": "Syllabus Scholar",
+    "Description": "Read 50 Syllabus Concepts.",
+    "TargetProgress": 50
+  },
+  {
+    "Id": 9,
+    "Category": "Syllabus",
+    "Icon": "🎓",
+    "Title": "Theory Expert",
+    "Description": "Read 100 Syllabus Concepts.",
+    "TargetProgress": 100
+  },
+  {
+    "Id": 10,
+    "Category": "Syllabus",
+    "Icon": "👁️",
+    "Title": "ISTQB Oracle",
+    "Description": "Read 150 Syllabus Concepts.",
+    "TargetProgress": 150
+  },
+  {
+    "Id": 11,
+    "Category": "PracticeExam",
+    "Icon": "🎯",
+    "Title": "First Blood",
+    "Description": "Answer 10 practice questions correctly.",
+    "TargetProgress": 10
+  },
+  {
+    "Id": 12,
+    "Category": "PracticeExam",
+    "Icon": "🔥",
+    "Title": "Warming Up",
+    "Description": "Answer 50 practice questions correctly.",
+    "TargetProgress": 50
+  },
+  {
+    "Id": 13,
+    "Category": "PracticeExam",
+    "Icon": "🏹",
+    "Title": "Sharpshooter",
+    "Description": "Answer 100 practice questions correctly.",
+    "TargetProgress": 100
+  },
+  {
+    "Id": 14,
+    "Category": "PracticeExam",
+    "Icon": "🧩",
+    "Title": "Question Bank",
+    "Description": "Answer 250 practice questions correctly.",
+    "TargetProgress": 250
+  },
+  {
+    "Id": 15,
+    "Category": "PracticeExam",
+    "Icon": "💎",
+    "Title": "Flawless Execution",
+    "Description": "Answer 500 practice questions correctly.",
+    "TargetProgress": 500
+  },
+  {
+    "Id": 16,
+    "Category": "TrueExam",
+    "Icon": "⏱️",
+    "Title": "Under Pressure",
+    "Description": "Pass 1 True Exam Simulator.",
+    "TargetProgress": 1
+  },
+  {
+    "Id": 17,
+    "Category": "TrueExam",
+    "Icon": "🧊",
+    "Title": "Cool & Collected",
+    "Description": "Pass 3 True Exam Simulators.",
+    "TargetProgress": 3
+  },
+  {
+    "Id": 18,
+    "Category": "TrueExam",
+    "Icon": "📈",
+    "Title": "Consistency is Key",
+    "Description": "Pass 5 True Exam Simulators.",
+    "TargetProgress": 5
+  },
+  {
+    "Id": 19,
+    "Category": "TrueExam",
+    "Icon": "🎖️",
+    "Title": "Exam Veteran",
+    "Description": "Pass 10 True Exam Simulators.",
+    "TargetProgress": 10
+  },
+  {
+    "Id": 20,
+    "Category": "TrueExam",
+    "Icon": "🏆",
+    "Title": "Simulation Master",
+    "Description": "Pass 25 True Exam Simulators.",
+    "TargetProgress": 25
+  },
+  {
+    "Id": 21,
+    "Category": "Global",
+    "Icon": "⭐",
+    "Title": "Getting Started",
+    "Description": "Reach Level 5.",
+    "TargetProgress": 5
+  },
+  {
+    "Id": 22,
+    "Category": "Global",
+    "Icon": "🌟",
+    "Title": "Rising Star",
+    "Description": "Reach Level 10.",
+    "TargetProgress": 10
+  },
+  {
+    "Id": 23,
+    "Category": "Global",
+    "Icon": "🛡️",
+    "Title": "Quality Assurance",
+    "Description": "Reach Level 25.",
+    "TargetProgress": 25
+  },
+  {
+    "Id": 24,
+    "Category": "Global",
+    "Icon": "⚔️",
+    "Title": "Combo Breaker",
+    "Description": "Reach a 10x correct answer combo.",
+    "TargetProgress": 10
+  },
+  {
+    "Id": 25,
+    "Category": "Global",
+    "Icon": "🚀",
+    "Title": "Godlike Streak",
+    "Description": "Reach a 25x correct answer combo.",
+    "TargetProgress": 25
+  }
+]
