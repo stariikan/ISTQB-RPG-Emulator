@@ -40,16 +40,6 @@ By combining rigorous study materials (flashcards, practice questions, and true 
 
 ---
 
-## 📸 Screenshots
-
-*(Replace these links with your actual image paths once you upload them to GitHub!)*
-
-| Main Menu & RPG Stats | Learning Mode (Flashcards) | True Exam Grid |
-|:---:|:---:|:---:|
-| <img src="docs/placeholder1.png" width="250"/> | <img src="docs/placeholder2.png" width="250"/> | <img src="docs/placeholder3.png" width="250"/> |
-
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
