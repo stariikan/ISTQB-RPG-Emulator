@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="ISTQBEmulator.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ISTQBEmulator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:ISTQBEmulator.Core.Models"
+    mc:Ignorable="d"
+    Title="ISTQB Emulator">
+
+    <Window.SystemBackdrop>
+        <MicaBackdrop />
+    </Window.SystemBackdrop>
+
+    <Grid x:Name="AppRoot" MaxWidth="1000" Padding="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="0,0,0,20" Visibility="{x:Bind ViewModel.PlayerCardVisibility, Mode=OneWay}">
+            <Border HorizontalAlignment="Left" Background="#05000000" BorderBrush="#209C27B0" BorderThickness="1" CornerRadius="12" Padding="15,10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.Column="0" Margin="0,0,15,0">
+                        <Border Background="#159C27B0" CornerRadius="20" Width="44" Height="44">
+                            <TextBlock Text="🎓" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <Border Background="#9C27B0" CornerRadius="10" Width="20" Height="20" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,-4,-4" BorderBrush="{ThemeResource ApplicationPageBackgroundThemeBrush}" BorderThickness="2">
+                            <TextBlock Text="{x:Bind ViewModel.UserProgress.Level, Mode=OneWay}" Foreground="White" FontSize="10" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </Grid>
+
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center" Margin="0,0,10,0">
+                        <TextBlock Text="{x:Bind ViewModel.UserProgress.CurrentRank, Mode=OneWay}" FontSize="15" FontWeight="Bold" Foreground="#9C27B0"/>
+                        <Grid Margin="0,4,0,0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+                            <ProgressBar Grid.Column="0" Maximum="100" Value="{x:Bind ViewModel.UserProgress.LevelProgressPercentage, Mode=OneWay}" Height="8" CornerRadius="4" Foreground="#9C27B0" Background="#209C27B0" VerticalAlignment="Center" HorizontalAlignment="Stretch" MinWidth="140"/>
+                            <TextBlock Grid.Column="1" Text="{x:Bind ViewModel.UserProgress.XpDisplay, Mode=OneWay}" FontSize="11" FontWeight="SemiBold" Foreground="Gray" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                        </Grid>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+            <Grid x:Name="MainMenuGrid" Visibility="{x:Bind ViewModel.MainMenuVisibility, Mode=OneWay}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Margin="0,0,0,40" HorizontalAlignment="Center">
+                    <TextBlock Text="ISTQB Learning Center" FontSize="32" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                    <TextBlock Text="Master the foundation level and track your progress." FontSize="16" Foreground="Gray" HorizontalAlignment="Center"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Spacing="30">
+                    <StackPanel Background="Transparent" Padding="20" CornerRadius="8" Spacing="15">
+                        <TextBlock Text="Your Progress" FontSize="20" FontWeight="SemiBold"/>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="150"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="50"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Glossary Terms:" VerticalAlignment="Center"/>
+                            <ProgressBar Grid.Column="1" CornerRadius="5" Background="#30808080" Foreground="#FFFF9800" Maximum="{x:Bind ViewModel.UserProgress.TotalGlossaryTerms, Mode=OneWay}" Value="{x:Bind ViewModel.UserProgress.PassedGlossaryTerms, Mode=OneWay}" VerticalAlignment="Center" Height="10" Margin="10,0"/>
+                            <TextBlock Grid.Column="2" Text="{x:Bind ViewModel.UserProgress.PassedGlossaryTerms, Mode=OneWay}" HorizontalAlignment="Right" VerticalAlignment="Center" FontWeight="Bold"/>
+                        </Grid>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="150"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="50"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Syllabus Concepts:" VerticalAlignment="Center"/>
+                            <ProgressBar Grid.Column="1" CornerRadius="5" Background="#30808080" Maximum="{x:Bind ViewModel.UserProgress.TotalSyllabusConcepts, Mode=OneWay}" Value="{x:Bind ViewModel.UserProgress.PassedSyllabusConcepts, Mode=OneWay}" VerticalAlignment="Center" Height="10" Foreground="#FF1976D2" Margin="10,0"/>
+                            <TextBlock Grid.Column="2" Text="{x:Bind ViewModel.UserProgress.PassedSyllabusConcepts, Mode=OneWay}" HorizontalAlignment="Right" VerticalAlignment="Center" FontWeight="Bold"/>
+                        </Grid>
+
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="150"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="50"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Grid.Column="0" Text="Practice Questions:" VerticalAlignment="Center"/>
+                            <ProgressBar Grid.Column="1" CornerRadius="5" Background="#30808080" Maximum="{x:Bind ViewModel.UserProgress.TotalPracticeQuestions, Mode=OneWay}" Value="{x:Bind ViewModel.UserProgress.PassedPracticeQuestions, Mode=OneWay}" VerticalAlignment="Center" Height="10" Foreground="#FF388E3C" Margin="10,0"/>
+                            <TextBlock Grid.Column="2" Text="{x:Bind ViewModel.UserProgress.PassedPracticeQuestions, Mode=OneWay}" HorizontalAlignment="Right" VerticalAlignment="Center" FontWeight="Bold"/>
+                        </Grid>
+                    </StackPanel>
+
+                    <Grid ColumnSpacing="20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" HorizontalAlignment="Stretch" Height="80" Command="{x:Bind ViewModel.StartGlossaryModeCommand}">
+                            <StackPanel>
+                                <TextBlock Text="📚 Study Glossary" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Learn and quiz terms" FontSize="12" Foreground="Gray" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                        <Button Grid.Column="1" HorizontalAlignment="Stretch" Height="80" Command="{x:Bind ViewModel.StartSyllabusModeCommand}">
+                            <StackPanel>
+                                <TextBlock Text="🧠 Study Syllabus" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center"/>
+                                <TextBlock Text="Master core concepts" FontSize="12" Foreground="Gray" HorizontalAlignment="Center"/>
+                            </StackPanel>
+                        </Button>
+                    </Grid>
+
+                    <Grid ColumnSpacing="20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Grid.Column="0" Content="📝 Practice Exam" HorizontalAlignment="Stretch" Height="60" Command="{x:Bind ViewModel.StartPracticeModeCommand}"/>
+                        <Button Grid.Column="1" Content="🏆 Achievements" HorizontalAlignment="Stretch" Height="60" Background="#9C27B0" Foreground="White" Command="{x:Bind ViewModel.OpenAchievementsCommand}"/>
+                        <Button Grid.Column="2" Content="⏱️ True Exam Simulator" HorizontalAlignment="Stretch" Height="60" Style="{ThemeResource AccentButtonStyle}" Command="{x:Bind ViewModel.StartTrueExamModeCommand}"/>
+                    </Grid>
+
+                    <HyperlinkButton Content="Reset all progress" Command="{x:Bind ViewModel.ResetProgressCommand}" Foreground="#FFC62828" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+                </StackPanel>
+            </Grid>
+
+            <Grid x:Name="AchievementsGrid" Visibility="{x:Bind ViewModel.AchievementsVisibility, Mode=OneWay}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Spacing="10" HorizontalAlignment="Center" Margin="0,0,0,20">
+                    <TextBlock Text="🏆 Your Achievements" FontSize="32" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <TextBlock Text="Unlock badges by mastering ISTQB concepts!" FontSize="16" Foreground="Gray" HorizontalAlignment="Center"/>
+                </StackPanel>
+
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                    <ItemsControl ItemsSource="{x:Bind ViewModel.AchievementsList, Mode=OneWay}" HorizontalAlignment="Center">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <VariableSizedWrapGrid Orientation="Horizontal" HorizontalAlignment="Center"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate x:DataType="models:Achievement">
+                                <Border Width="160" Height="210" Margin="10" Padding="15"
+                            Background="#05000000" BorderBrush="#20808080" BorderThickness="1" CornerRadius="12"
+                            Opacity="{x:Bind DisplayOpacity, Mode=OneWay}">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="Auto"/>
+                                            <RowDefinition Height="*"/>
+                                            <RowDefinition Height="Auto"/>
+                                        </Grid.RowDefinitions>
+
+                                        <TextBlock Grid.Row="0" Text="{x:Bind Icon}" FontSize="48" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                                        <TextBlock Grid.Row="1" Text="{x:Bind Title}" FontSize="14" FontWeight="Bold" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center"/>
+                                        <TextBlock Grid.Row="2" Text="{x:Bind Description}" FontSize="11" Foreground="Gray" TextWrapping="Wrap" TextAlignment="Center" HorizontalAlignment="Center" Margin="0,5,0,0"/>
+
+                                        <StackPanel Grid.Row="3" Margin="0,10,0,0">
+                                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Spacing="4">
+                                                <TextBlock Text="{x:Bind CurrentProgress}" FontSize="10" Foreground="Gray"/>
+                                                <TextBlock Text="/" FontSize="10" Foreground="Gray"/>
+                                                <TextBlock Text="{x:Bind TargetProgress}" FontSize="10" Foreground="Gray"/>
+                                            </StackPanel>
+                                            <ProgressBar Maximum="{x:Bind TargetProgress}" Value="{x:Bind CurrentProgress}" Height="6" CornerRadius="3" Foreground="#FF9800" Background="#30FF9800" Margin="0,4,0,0"/>
+                                        </StackPanel>
+                                    </Grid>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+
+                <Border Grid.Row="2" BorderBrush="#20808080" BorderThickness="0,1,0,0" Padding="0,20,0,0" Margin="0,10,0,0">
+                    <Button Content="🏠 Back to Menu" Command="{x:Bind ViewModel.ReturnToMenuCommand}" HorizontalAlignment="Center"/>
+                </Border>
+            </Grid>
+
+            <Grid x:Name="LearningCardGrid" Visibility="{x:Bind ViewModel.LearningCardVisibility, Mode=OneWay}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto" Padding="0,0,15,0">
+                    <StackPanel VerticalAlignment="Center" Spacing="20">
+                        <TextBlock Text="Study this concept:" Foreground="Gray" FontSize="16" HorizontalAlignment="Center"/>
+
+                        <Image Source="{x:Bind ViewModel.QuestionImage, Mode=OneWay}" 
+                   Visibility="{x:Bind ViewModel.QuestionImageVisibility, Mode=OneWay}" 
+                   Stretch="Uniform" MaxHeight="300" HorizontalAlignment="Center" Margin="0,10"/>
+
+                        <TextBlock Text="{x:Bind ViewModel.CurrentLearningTerm.Term, Mode=OneWay}" 
+                       FontSize="32" FontWeight="Bold" TextWrapping="Wrap" 
+                       HorizontalAlignment="Center" TextAlignment="Center"/>
+
+                        <Border Background="#10808080" Padding="25" CornerRadius="8" Margin="0,20,0,0">
+                            <TextBlock Text="{x:Bind ViewModel.CurrentLearningTerm.Definition, Mode=OneWay}" 
+                           FontSize="18" TextWrapping="Wrap" LineHeight="28"/>
+                        </Border>
+                    </StackPanel>
+                </ScrollViewer>
+
+                <Border Grid.Row="1" BorderBrush="#20808080" BorderThickness="0,1,0,0" Padding="0,20,0,0" Margin="0,10,0,0">
+                    <Grid>
+                        <Button Content="🏠 Menu" Command="{x:Bind ViewModel.ReturnToMenuCommand}" HorizontalAlignment="Left" Background="Transparent" BorderThickness="0"/>
+                        <Button Content="Got it! Next ➔" Command="{x:Bind ViewModel.RouteNextClickCommand}" HorizontalAlignment="Right" Style="{ThemeResource AccentButtonStyle}"/>
+                    </Grid>
+                </Border>
+            </Grid>
+
+            <Grid x:Name="QuizGrid" Visibility="{x:Bind ViewModel.QuizVisibility, Mode=OneWay}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <ScrollViewer Grid.Row="0" VerticalScrollBarVisibility="Auto" Padding="0,0,15,0">
+                    <StackPanel Spacing="20">
+
+                        <StackPanel Orientation="Horizontal" Spacing="20" Margin="0,0,0,15">
+                            <Border Background="#20FF9800" Padding="15,10" CornerRadius="5" VerticalAlignment="Top" Visibility="{x:Bind ViewModel.TimerVisibility, Mode=OneWay}">
+                                <StackPanel Orientation="Horizontal" Spacing="10">
+                                    <TextBlock Text="⏱️" FontSize="18"/>
+                                    <TextBlock Text="{x:Bind ViewModel.TimerText, Mode=OneWay}" FontSize="18" FontWeight="Bold" Foreground="#FFFF9800" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </Border>
+
+                            <Border VerticalAlignment="Top" Background="#05000000" BorderBrush="#15808080" BorderThickness="1" CornerRadius="8" Padding="8" Visibility="{x:Bind ViewModel.ExamNavVisibility, Mode=OneWay}">
+                                <ItemsControl ItemsSource="{x:Bind ViewModel.ExamNavigationList, Mode=OneWay}">
+                                    <ItemsControl.ItemsPanel>
+                                        <ItemsPanelTemplate>
+                                            <VariableSizedWrapGrid Orientation="Horizontal" MaximumRowsOrColumns="20"/>
+                                        </ItemsPanelTemplate>
+                                    </ItemsControl.ItemsPanel>
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <Button Content="{Binding DisplayNumber}" 
+                                                    Command="{Binding DataContext.JumpToQuestionCommand, ElementName=AppRoot}"
+                                                    CommandParameter="{Binding Index}"
+                                                    Background="{Binding BgColor}"
+                                                    Foreground="{Binding TextColor}"
+                                                    Margin="2" Width="30" Height="30" Padding="0" CornerRadius="15" FontWeight="Bold" BorderThickness="0"/>
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </Border>
+                        </StackPanel>
+
+                        <Image Source="{x:Bind ViewModel.QuestionImage, Mode=OneWay}" 
+                               Visibility="{x:Bind ViewModel.QuestionImageVisibility, Mode=OneWay}" 
+                               Stretch="Uniform" MaxHeight="250" Margin="0,0,0,20" HorizontalAlignment="Left"/>
+
+                        <TextBlock Text="{x:Bind ViewModel.CurrentQuestion.Text, Mode=OneWay}" FontSize="22" TextWrapping="Wrap" FontWeight="SemiBold" />
+                        <TextBlock Text="{x:Bind ViewModel.CurrentQuestion.SelectionType, Mode=OneWay}" FontSize="16" FontStyle="Italic" Foreground="Gray" />
+
+                        <ItemsControl ItemsSource="{x:Bind ViewModel.CurrentQuestion.Variants, Mode=OneWay}" Visibility="{x:Bind ViewModel.HasVariants, Mode=OneWay}">
+                            <ItemsControl.ItemTemplate>
+                                <DataTemplate x:DataType="models:AnswerVariant">
+                                    <Button HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" Margin="0,0,0,12" Padding="0" Background="Transparent" BorderThickness="0"
+                                            IsEnabled="{Binding DataContext.IsInteractionEnabled, ElementName=AppRoot, Mode=OneWay}" 
+                                            Click="OnVariantClick">
+
+                                        <Border Background="{Binding BackgroundColor, Mode=OneWay}" 
+                                                BorderBrush="#30808080" BorderThickness="1" 
+                                                Padding="16" CornerRadius="8" HorizontalAlignment="Stretch">
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <Border Grid.Column="0" Width="36" Height="36" CornerRadius="18" 
+                                                        Background="#15000000" BorderBrush="#20000000" BorderThickness="1"
+                                                        Margin="0,0,16,0" VerticalAlignment="Top">
+                                                    <TextBlock Text="{Binding Label}" FontWeight="Bold" FontSize="16" 
+                                                               HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                </Border>
+
+                                                <StackPanel Grid.Column="1" VerticalAlignment="Center" Spacing="10">
+                                                    <TextBlock Text="{Binding Text}" TextWrapping="Wrap" FontSize="16" FontWeight="Medium"/>
+                                                    <Image Source="{Binding VariantImage, Mode=OneWay}" 
+                                                           Visibility="{Binding VariantImageVisibility, Mode=OneWay}" 
+                                                           Stretch="Uniform" MaxHeight="150" HorizontalAlignment="Left" />
+                                                </StackPanel>
+                                            </Grid>
+                                        </Border>
+                                    </Button>
+                                </DataTemplate>
+                            </ItemsControl.ItemTemplate>
+                        </ItemsControl>
+
+                        <Button Content="Reveal Answer &amp; Explanation" HorizontalAlignment="Stretch" MinHeight="60"
+                                Command="{x:Bind ViewModel.RevealAnswerCommand}" IsEnabled="{x:Bind ViewModel.IsInteractionEnabled, Mode=OneWay}" Visibility="{x:Bind ViewModel.FallbackButtonVisibility, Mode=OneWay}"/>
+
+                        <StackPanel Visibility="{x:Bind ViewModel.IsExplanationVisible, Mode=OneWay}" Background="#80F3F4F6" Padding="20" CornerRadius="8" Margin="0,0,0,20">
+                            <TextBlock Text="{x:Bind ViewModel.FeedbackMessage, Mode=OneWay}" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+
+                            <Image Source="{x:Bind ViewModel.ExplanationImage, Mode=OneWay}" 
+                                   Visibility="{x:Bind ViewModel.ExplanationImageVisibility, Mode=OneWay}" 
+                                   Stretch="Uniform" MaxHeight="250" Margin="0,0,0,15" HorizontalAlignment="Left"/>
+
+                            <TextBlock Text="{x:Bind ViewModel.CurrentQuestion.Explanation, Mode=OneWay}" TextWrapping="Wrap" FontStyle="Italic"/>
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+
+                <Border Grid.Row="1" BorderBrush="#20808080" BorderThickness="0,1,0,0" Padding="0,20,0,0" Margin="0,10,0,0">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Grid.Column="0" Orientation="Horizontal" Spacing="10" VerticalAlignment="Center">
+                            <Button Content="🏠 Menu" Command="{x:Bind ViewModel.ReturnToMenuCommand}" Background="Transparent" BorderThickness="0"/>
+                        </StackPanel>
+
+                        <Border Grid.Column="1" Visibility="{x:Bind ViewModel.RpgHeaderVisibility, Mode=OneWay}" Background="#05000000" BorderBrush="#15808080" BorderThickness="1" CornerRadius="10" Padding="15,8" Margin="20,0">
+                            <Grid ColumnSpacing="15">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="150"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Border Grid.Column="0" Background="#15F44336" CornerRadius="8" Width="42" Height="42">
+                                    <TextBlock Text="{x:Bind ViewModel.RpgStats.BossIcon, Mode=OneWay}" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+
+                                <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                                    <TextBlock Text="{x:Bind ViewModel.RpgStats.BossName, Mode=OneWay}" FontWeight="Bold" Foreground="#F44336" FontSize="12" TextTrimming="CharacterEllipsis" HorizontalAlignment="Left" Margin="0,0,0,2"/>
+
+                                    <ProgressBar Maximum="{x:Bind ViewModel.RpgStats.BossMaxHealth, Mode=OneWay}" Value="{x:Bind ViewModel.RpgStats.BossCurrentHealth, Mode=OneWay}" Height="8" CornerRadius="4" Foreground="#F44336" Background="#30F44336" Margin="0,2,0,2"/>
+
+                                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                                        <TextBlock Text="{x:Bind ViewModel.RpgStats.BossCurrentHealth, Mode=OneWay}" FontSize="10" FontWeight="Bold" Foreground="#F44336" />
+                                        <TextBlock Text=" / " FontSize="10" Foreground="Gray"/>
+                                        <TextBlock Text="{x:Bind ViewModel.RpgStats.BossMaxHealth, Mode=OneWay}" FontSize="10" FontWeight="Bold" Foreground="Gray"/>
+                                        <TextBlock Text=" HP" FontSize="10" FontWeight="Bold" Foreground="Gray" Margin="2,0,0,0"/>
+                                    </StackPanel>
+                                </StackPanel>
+
+                                <TextBlock Grid.Column="2" Text="{x:Bind ViewModel.RpgStats.CombatMessage, Mode=OneWay}" Foreground="{x:Bind ViewModel.RpgStats.CombatMessageColor, Mode=OneWay}" FontSize="13" VerticalAlignment="Center" FontWeight="SemiBold" TextWrapping="Wrap"/>
+
+                                <Border Grid.Column="3" Background="#15FF9800" CornerRadius="8" Padding="10,5" MinWidth="65">
+                                    <StackPanel VerticalAlignment="Center">
+                                        <TextBlock Text="COMBO" FontSize="9" Foreground="#FF9800" FontWeight="Bold" HorizontalAlignment="Center" CharacterSpacing="20"/>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                            <TextBlock Text="x" FontSize="12" Foreground="#FF9800" FontWeight="Bold" VerticalAlignment="Bottom" Margin="0,0,2,2"/>
+                                            <TextBlock Text="{x:Bind ViewModel.RpgStats.ComboStreak, Mode=OneWay}" FontSize="18" Foreground="#FF9800" FontWeight="Black"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                            </Grid>
+                        </Border>
+
+                        <StackPanel Grid.Column="2" Orientation="Horizontal" Spacing="10" VerticalAlignment="Center" HorizontalAlignment="Right">
+                            <Button Content="🡄 Back" Command="{x:Bind ViewModel.RouteBackClickCommand}" Visibility="{x:Bind ViewModel.BackButtonVisibility, Mode=OneWay}" VerticalAlignment="Center"/>
+                            <Button Content="Next ➔" Command="{x:Bind ViewModel.RouteNextClickCommand}" Style="{ThemeResource AccentButtonStyle}" Visibility="{x:Bind ViewModel.NextButtonVisibility, Mode=OneWay}" VerticalAlignment="Center"/>
+                            <Button Content="Finish ✔️" Command="{x:Bind ViewModel.RouteNextClickCommand}" Style="{ThemeResource AccentButtonStyle}" Visibility="{x:Bind ViewModel.FinishButtonVisibility, Mode=OneWay}" IsEnabled="{x:Bind ViewModel.CanFinishExam, Mode=OneWay}" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                    </Grid>
+                </Border>
+            </Grid>
+
+            <Grid x:Name="ResultsGrid" Visibility="{x:Bind ViewModel.ResultsVisibility, Mode=OneWay}">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" HorizontalAlignment="Center" Margin="0,0,0,20" Spacing="10">
+                    <TextBlock Text="Exam Complete!" FontSize="32" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    <TextBlock Text="{x:Bind ViewModel.ExamScoreText, Mode=OneWay}" FontSize="24" HorizontalAlignment="Center"/>
+                    <TextBlock Text="{x:Bind ViewModel.ExamPassFailText, Mode=OneWay}" FontSize="28" FontWeight="ExtraBold" Foreground="{x:Bind ViewModel.ExamPassFailColor, Mode=OneWay}" HorizontalAlignment="Center"/>
+                </StackPanel>
+                <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Padding="0,0,15,0">
+                    <ItemsControl ItemsSource="{x:Bind ViewModel.ExamResultsList, Mode=OneWay}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate x:DataType="models:ExamResultItem">
+                                <Border Background="#10808080" CornerRadius="8" Padding="20" Margin="0,0,0,15" BorderBrush="{Binding ColorHex}" BorderThickness="4,0,0,0">
+                                    <StackPanel Spacing="10">
+                                        <TextBlock Text="{Binding QuestionText}" FontSize="16" FontWeight="SemiBold" TextWrapping="Wrap"/>
+                                        <StackPanel Orientation="Horizontal" Spacing="15">
+                                            <TextBlock Text="{Binding Icon}" Foreground="{Binding ColorHex}" FontWeight="Bold"/>
+                                            <TextBlock Text="Your Answer:" Foreground="Gray"/>
+                                            <TextBlock Text="{Binding UserAnswer}" FontWeight="SemiBold"/>
+                                        </StackPanel>
+                                        <StackPanel Spacing="5" Visibility="{Binding ExplanationVisibility}">
+                                            <StackPanel Orientation="Horizontal" Spacing="15">
+                                                <TextBlock Text="Correct Answer:" Foreground="Gray"/>
+                                                <TextBlock Text="{Binding CorrectAnswer}" FontWeight="Bold"/>
+                                            </StackPanel>
+                                            <TextBlock Text="{Binding Explanation}" TextWrapping="Wrap" FontStyle="Italic" Foreground="Gray" Margin="0,5,0,0"/>
+                                        </StackPanel>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+                <Border Grid.Row="2" BorderBrush="#20808080" BorderThickness="0,1,0,0" Padding="0,20,0,0" Margin="0,10,0,0">
+                    <Button Content="Return to Dashboard ➔" Command="{x:Bind ViewModel.ReturnToMenuFromResultsCommand}" HorizontalAlignment="Stretch" Style="{ThemeResource AccentButtonStyle}" MinHeight="50"/>
+                </Border>
+            </Grid>
+
+        </Grid>
+
+        <Border Grid.Row="0" Grid.RowSpan="2"
+                VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                Margin="0,0,0,40"
+                Background="#EEFFFFFF"
+                BorderBrush="#FFD700" BorderThickness="2"
+                CornerRadius="12" Padding="20,15"
+                Visibility="{x:Bind ViewModel.AchievementPopupVisibility, Mode=OneWay}">
+            <StackPanel Orientation="Horizontal" Spacing="15">
+                <TextBlock Text="{x:Bind ViewModel.AchievementPopupIcon, Mode=OneWay}" FontSize="36" VerticalAlignment="Center"/>
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock Text="{x:Bind ViewModel.AchievementPopupTitle, Mode=OneWay}" FontSize="16" FontWeight="Bold" Foreground="#FF9800"/>
+                    <TextBlock Text="{x:Bind ViewModel.AchievementPopupDescription, Mode=OneWay}" FontSize="14" Foreground="Gray"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+
+        <TextBlock Text="Developed by Murat Khabriev" 
+                   Grid.Row="0"
+                   FontSize="12" 
+                   FontWeight="SemiBold"
+                   Foreground="#9C27B0" 
+                   Opacity="0.3" 
+                   Margin="10"
+                   HorizontalAlignment="Right" 
+                   VerticalAlignment="Top"
+                   IsHitTestVisible="False"/>
+    </Grid>
+</Window>

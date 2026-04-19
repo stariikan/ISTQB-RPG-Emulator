@@ -1,0 +1,150 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <RootNamespace>ISTQBEmulator</RootNamespace>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <Platforms>x64</Platforms>
+    <RuntimeIdentifiers>win-x64</RuntimeIdentifiers>
+    
+    <UseWinUI>true</UseWinUI>
+    <EnableMsixTooling>true</EnableMsixTooling>
+    <Nullable>enable</Nullable>
+    <WindowsPackageType>None</WindowsPackageType>
+
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    
+    <PublishReadyToRun>True</PublishReadyToRun>
+    <PublishTrimmed>False</PublishTrimmed>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Assets\SeedData\Achievements_seed.json" />
+    <Content Remove="Assets\SeedData\Battle_Messages.json" />
+    <Content Remove="Assets\SeedData\Images\Exam_1_definition_id_27.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_1_definition_id_28.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_1_ID_36.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_1_ID_37.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_2_ID_26.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_2_ID_27.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_2_ID_36.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_2_ID_37.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_2_variant_A_ID_27.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_2_variant_B_ID_27.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_2_variant_C_ID_27.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_2_variant_D_ID_27.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_3_ID_14.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_3_ID_21.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_3_ID_22.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_3_ID_23.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_3_ID_33.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_3_ID_44.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_3_ID_60.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_4_Explanation_ID_23.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_4_Explanation_ID_31.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_4_Explanation_ID_32.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_4_Explanation_ID_34.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_4_Explanation_ID_39.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_4_ID_22.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_4_ID_23.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_4_ID_31.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_4_ID_32.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_4_ID_38.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_5_Explanation_ID_15.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_5_Explanation_ID_20.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_5_Explanation_ID_21.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_5_Explanation_ID_23.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_5_Explanation_ID_31.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_5_Explanation_ID_32.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_5_Explanation_ID_4.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_5_ID_21.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_5_ID_22.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_5_ID_23.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_5_ID_24.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_5_ID_31.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_5_ID_32.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_6_Explanation_ID_17.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_6_Explanation_ID_32.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_6_Explanation_ID_34.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_6_Explanation_ID_39.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_6_Explanation_ID_4.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_6_Explanation_ID_5.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_6_Explanation_ID_8.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_6_ID_22.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_6_ID_23.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_6_ID_32.jpg" />
+    <Content Remove="Assets\SeedData\Images\Exam_6_ID_38.jpg" />
+    <Content Remove="Assets\SeedData\Monster_Names.json" />
+    <Content Remove="Assets\SeedData\Sample Exam 1_seed.json" />
+    <Content Remove="Assets\SeedData\Sample Exam 2_seed.json" />
+    <Content Remove="Assets\SeedData\Sample Exam 3_seed.json" />
+    <Content Remove="Assets\SeedData\Sample Exam 4_seed.json" />
+    <Content Remove="Assets\SeedData\Sample Exam 5_seed.json" />
+    <Content Remove="Assets\SeedData\Sample Exam 6_seed.json" />
+    <Content Remove="Assets\SeedData\Terms_1_seed.json" />
+    <Content Remove="Assets\SeedData\Victory_messages.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\SeedData\Sample Exam 3_seed.json" />
+    <None Remove="Assets\SeedData\Sample Exam 4_seed.json" />
+    <None Remove="Assets\SeedData\Sample Exam 5_seed.json" />
+    <None Remove="Assets\SeedData\Sample Exam 6_seed.json" />
+    <None Remove="Assets\SeedData\Terms_1_seed.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\SeedData\Battle_Messages.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\SeedData\Images\**\*.*">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\SeedData\Sample Exam 1_seed.json"><CopyToOutputDirectory>Always</CopyToOutputDirectory></EmbeddedResource>
+    <EmbeddedResource Include="Assets\SeedData\Sample Exam 2_seed.json"><CopyToOutputDirectory>Always</CopyToOutputDirectory></EmbeddedResource>
+    <EmbeddedResource Include="Assets\SeedData\Sample Exam 3_seed.json"><CopyToOutputDirectory>Always</CopyToOutputDirectory></EmbeddedResource>
+    <EmbeddedResource Include="Assets\SeedData\Sample Exam 4_seed.json"><CopyToOutputDirectory>Always</CopyToOutputDirectory></EmbeddedResource>
+    <EmbeddedResource Include="Assets\SeedData\Sample Exam 5_seed.json"><CopyToOutputDirectory>Always</CopyToOutputDirectory></EmbeddedResource>
+    <EmbeddedResource Include="Assets\SeedData\Sample Exam 6_seed.json"><CopyToOutputDirectory>Always</CopyToOutputDirectory></EmbeddedResource>
+    <EmbeddedResource Include="Assets\SeedData\Terms_1_seed.json"><CopyToOutputDirectory>Always</CopyToOutputDirectory></EmbeddedResource>
+    <EmbeddedResource Include="Assets\SeedData\Achievements_seed.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Assets\SeedData\Victory_messages.json"><CopyToOutputDirectory>Always</CopyToOutputDirectory></EmbeddedResource>
+    <EmbeddedResource Include="Assets\SeedData\Monster_Names.json"><CopyToOutputDirectory>Always</CopyToOutputDirectory></EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.260317003" />
+    <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.4654" />
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.13" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="8.0.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Manifest Include="$(ApplicationManifest)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="icon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
