@@ -219,8 +219,25 @@
 
                 <Border Grid.Row="1" BorderBrush="#20808080" BorderThickness="0,1,0,0" Padding="0,20,0,0" Margin="0,10,0,0">
                     <Grid>
-                        <Button Content="🏠 Menu" Command="{x:Bind ViewModel.ReturnToMenuCommand}" HorizontalAlignment="Left" Background="Transparent" BorderThickness="0"/>
-                        <Button Content="Got it! Next ➔" Command="{x:Bind ViewModel.RouteNextClickCommand}" HorizontalAlignment="Right" Style="{ThemeResource AccentButtonStyle}"/>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Spacing="10">
+                            <Button Content="🏠 Menu" 
+                    Command="{x:Bind ViewModel.ReturnToMenuCommand}" 
+                    Background="Transparent" 
+                    BorderThickness="0"/>
+
+                            <Button Content="⬅️ Previous" 
+                    Command="{x:Bind ViewModel.RouteBackClickCommand}" 
+                    Visibility="{x:Bind ViewModel.BackButtonVisibility, Mode=OneWay}" 
+                    VerticalAlignment="Center"
+                    Padding="12,5"/>
+                        </StackPanel>
+
+                        <Button Content="Got it! Next ➔" 
+                Command="{x:Bind ViewModel.RouteNextClickCommand}" 
+                HorizontalAlignment="Right" 
+                Style="{ThemeResource AccentButtonStyle}"
+                Padding="20,10"
+                CornerRadius="8"/>
                     </Grid>
                 </Border>
             </Grid>
