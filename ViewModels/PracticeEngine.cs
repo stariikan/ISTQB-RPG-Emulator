@@ -75,6 +75,10 @@ namespace ISTQBEmulator.ViewModels
             vm.IsInteractionEnabled = true;
             vm.SelectedOptions.Clear();
 
+            // Force Exam UI off when Practice Mode loads
+            vm.ExamNavVisibility = Microsoft.UI.Xaml.Visibility.Collapsed;
+            vm.TimerVisibility = Microsoft.UI.Xaml.Visibility.Collapsed;
+
             // Clear old images
             vm.QuestionImage = null;
             vm.QuestionImageVisibility = Microsoft.UI.Xaml.Visibility.Collapsed;
