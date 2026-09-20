@@ -102,8 +102,35 @@ namespace ISTQBEmulator.ViewModels
         public MainViewModel()
         {
             _db = new AppDbContext();
-            try { UserProgress.UpdateStats(_db); } catch { }
+
+            // Fire off our safe startup sequence
+            _ = RunStartupSequenceAsync();
+
             ShowView("Menu");
+        }
+
+        // --- NEW STARTUP HELPER ---
+        private async Task RunStartupSequenceAsync()
+        {
+            try
+            {
+                ISTQBEmulator.Services.AppLogger.Log("--- APP LAUNCHED ---");
+                ISTQBEmulator.Services.AppLogger.Log("Starting DataSeeder...");
+
+                await DataSeeder.InitializeAsync(_db);
+
+                ISTQBEmulator.Services.AppLogger.Log("DataSeeder finished. Loading User Progress...");
+
+                await UserProgress.InitializeFromDatabaseAsync(_db);
+
+                ISTQBEmulator.Services.AppLogger.Log("Startup Sequence Complete.");
+            }
+            catch (Exception ex)
+            {
+                // This is the most important log! If it crashes, we will know exactly why.
+                ISTQBEmulator.Services.AppLogger.Log($"CRITICAL STARTUP ERROR: {ex.Message}");
+                ISTQBEmulator.Services.AppLogger.Log(ex.StackTrace);
+            }
         }
         // ==========================================
         // --- ACHIEVEMENTS LOGIC ---
@@ -172,12 +199,12 @@ namespace ISTQBEmulator.ViewModels
         }
 
         [RelayCommand]
-        public void ReturnToMenu()
+        public async Task ReturnToMenuAsync()
         {
             StopTimer();
 
             // 1. Save their current stats to the database
-            UserProgress.UpdateStats(_db);
+            await UserProgress.InitializeFromDatabaseAsync(_db); // <--- 2. Now this is perfectly legal!
 
             // Only check the long-term "Global" progress when leaving a session
             _ = EvaluateAchievementsAsync();
@@ -209,10 +236,10 @@ namespace ISTQBEmulator.ViewModels
         }
 
         [RelayCommand]
-        public void ReturnToMenuFromResults()
+        public async Task ReturnToMenuFromResultsAsync() // 1. Added "async Task" and "Async"
         {
             ExamResultsList?.Clear();
-            ReturnToMenu();
+            await ReturnToMenuAsync(); // 2. Added "await" and the new method name
         }
 
         [RelayCommand]

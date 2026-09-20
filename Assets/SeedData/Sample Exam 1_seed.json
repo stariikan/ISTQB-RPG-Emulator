@@ -752,34 +752,8 @@
         "Text": "Overbooked, 0, 1-floor full, performance, usability"
       }
     ],
-    "CorrectAnswer": "C",
-    "Definition": "Test execution metrics are gathered during the Test Execution activity. These metric are used in reporting."
-  },
-  {
-    "Type": "ExamQuestion",
-    "ID": "30",
-    "ImageName": null,
-    "Term": " ",
-    "Variants": [
-      {
-        "Label": "A",
-        "Text": " "
-      },
-      {
-        "Label": "B",
-        "Text": " "
-      },
-      {
-        "Label": "C",
-        "Text": " "
-      },
-      {
-        "Label": "D",
-        "Text": " "
-      }
-    ],
     "CorrectAnswer": "A",
-    "Definition": "The level of detail and structure for the test documentation should be included in test plan as part of the criteria for the performance of testing activities."
+    "Definition": "A is correct. This test the valid scenarios first, then invalid (overbooked), then the non-functional tests."
   },
   {
     "Type": "ExamQuestion",

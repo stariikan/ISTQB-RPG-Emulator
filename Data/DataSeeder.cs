@@ -20,7 +20,11 @@ namespace ISTQBEmulator.Data
             // 1. UPSERT GLOSSARY TERMS
             // ==========================================
             // Load existing terms into a Dictionary for instant lookup by their Term name
-            var existingTerms = await db.GlossaryTerms.ToDictionaryAsync(t => t.Term);
+            // The new, safe way that ignores duplicates
+            var existingTermsList = await db.GlossaryTerms.ToListAsync();
+            var existingTerms = existingTermsList
+                .GroupBy(t => t.Term)
+                .ToDictionary(g => g.Key, g => g.First());
             var termJsonStrings = ResourceHelper.ReadAllEmbeddedJsonsWithKeyword("Terms_");
 
             foreach (var jsonString in termJsonStrings)
@@ -162,32 +166,49 @@ namespace ISTQBEmulator.Data
             // ==========================================
             // 3. UPSERT ACHIEVEMENTS 🏆
             // ==========================================
+            ISTQBEmulator.Services.AppLogger.Log("Fetching Achievements from DB...");
             var existingAchievements = await db.Achievements.ToDictionaryAsync(a => a.Id);
+
+            ISTQBEmulator.Services.AppLogger.Log("Reading Achievements_seed.json...");
             string jsonAch = ResourceHelper.ReadEmbeddedJson("Achievements_seed.json");
 
-            if (!string.IsNullOrEmpty(jsonAch))
+            if (string.IsNullOrEmpty(jsonAch))
             {
-                var achievements = JsonSerializer.Deserialize<List<Achievement>>(jsonAch, options);
-                if (achievements != null)
+                ISTQBEmulator.Services.AppLogger.Log("❌ ERROR: jsonAch is empty! Check if the file's Build Action is set to 'Embedded Resource'.");
+            }
+            else
+            {
+                ISTQBEmulator.Services.AppLogger.Log($"Success: Found JSON string. Length: {jsonAch.Length}");
+                try
                 {
-                    foreach (var ach in achievements)
+                    var achievements = JsonSerializer.Deserialize<List<Achievement>>(jsonAch, options);
+                    if (achievements != null)
                     {
-                        if (existingAchievements.TryGetValue(ach.Id, out var dbAch))
+                        ISTQBEmulator.Services.AppLogger.Log($"Deserialized {achievements.Count} achievements. Updating DB...");
+                        foreach (var ach in achievements)
                         {
-                            // UPDATE: In case you change descriptions or targets in the future
-                            // Do NOT touch dbAch.IsUnlocked or dbAch.CurrentProgress!
-                            dbAch.Category = ach.Category;
-                            dbAch.Icon = ach.Icon;
-                            dbAch.Title = ach.Title;
-                            dbAch.Description = ach.Description;
-                            dbAch.TargetProgress = ach.TargetProgress;
+                            if (existingAchievements.TryGetValue(ach.Id, out var dbAch))
+                            {
+                                // UPDATE: In case you change descriptions or targets in the future
+                                // Do NOT touch dbAch.IsUnlocked or dbAch.CurrentProgress!
+                                dbAch.Category = ach.Category;
+                                dbAch.Icon = ach.Icon;
+                                dbAch.Title = ach.Title;
+                                dbAch.Description = ach.Description;
+                                dbAch.TargetProgress = ach.TargetProgress;
+                            }
+                            else
+                            {
+                                // INSERT: You added a 26th achievement!
+                                db.Achievements.Add(ach);
+                            }
                         }
-                        else
-                        {
-                            // INSERT: You added a 26th achievement!
-                            db.Achievements.Add(ach);
-                        }
+                        ISTQBEmulator.Services.AppLogger.Log("Finished processing achievements loop.");
                     }
+                }
+                catch (Exception ex)
+                {
+                    ISTQBEmulator.Services.AppLogger.Log($"❌ JSON PARSE ERROR in Achievements: {ex.Message}");
                 }
             }
 

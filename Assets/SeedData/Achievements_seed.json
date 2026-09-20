@@ -12,32 +12,32 @@
     "Category": "Glossary",
     "Icon": "📚",
     "Title": "Vocab Builder",
-    "Description": "Learn 50 Glossary Terms.",
-    "TargetProgress": 50
+    "Description": "Learn 25 Glossary Terms.",
+    "TargetProgress": 25
   },
   {
     "Id": 3,
     "Category": "Glossary",
     "Icon": "🗣️",
     "Title": "Fluent Tester",
-    "Description": "Learn 100 Glossary Terms.",
-    "TargetProgress": 100
+    "Description": "Learn 50 Glossary Terms.",
+    "TargetProgress": 50
   },
   {
     "Id": 4,
     "Category": "Glossary",
     "Icon": "🗂️",
     "Title": "Walking Dictionary",
-    "Description": "Learn 200 Glossary Terms.",
-    "TargetProgress": 200
+    "Description": "Learn 75 Glossary Terms.",
+    "TargetProgress": 75
   },
   {
     "Id": 5,
     "Category": "Glossary",
     "Icon": "👑",
     "Title": "Glossary Grandmaster",
-    "Description": "Learn 350 Glossary Terms.",
-    "TargetProgress": 350
+    "Description": "Learn All Glossary Terms.",
+    "TargetProgress": 94
   },
   {
     "Id": 6,
@@ -52,32 +52,32 @@
     "Category": "Syllabus",
     "Icon": "🤓",
     "Title": "Bookworm",
-    "Description": "Read 20 Syllabus Concepts.",
-    "TargetProgress": 20
+    "Description": "Read 10 Syllabus Concepts.",
+    "TargetProgress": 10
   },
   {
     "Id": 8,
     "Category": "Syllabus",
     "Icon": "🧠",
     "Title": "Syllabus Scholar",
-    "Description": "Read 50 Syllabus Concepts.",
-    "TargetProgress": 50
+    "Description": "Read 25 Syllabus Concepts.",
+    "TargetProgress": 25
   },
   {
     "Id": 9,
     "Category": "Syllabus",
     "Icon": "🎓",
     "Title": "Theory Expert",
-    "Description": "Read 100 Syllabus Concepts.",
-    "TargetProgress": 100
+    "Description": "Read 50 Syllabus Concepts.",
+    "TargetProgress": 50
   },
   {
     "Id": 10,
     "Category": "Syllabus",
     "Icon": "👁️",
     "Title": "ISTQB Oracle",
-    "Description": "Read 150 Syllabus Concepts.",
-    "TargetProgress": 150
+    "Description": "Read All Syllabus Concepts.",
+    "TargetProgress": 71
   },
   {
     "Id": 11,
@@ -108,16 +108,16 @@
     "Category": "PracticeExam",
     "Icon": "🧩",
     "Title": "Question Bank",
-    "Description": "Answer 250 practice questions correctly.",
-    "TargetProgress": 250
+    "Description": "Answer 150 practice questions correctly.",
+    "TargetProgress": 150
   },
   {
     "Id": 15,
     "Category": "PracticeExam",
     "Icon": "💎",
     "Title": "Flawless Execution",
-    "Description": "Answer 500 practice questions correctly.",
-    "TargetProgress": 500
+    "Description": "Answer 200 practice questions correctly.",
+    "TargetProgress": 200
   },
   {
     "Id": 16,

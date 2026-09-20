@@ -291,13 +291,13 @@
     "Type": "SyllabusConcept",
     "Term": "Use decision table testing to derive test cases",
     "Definition": "Decision tables are used for testing the implementation of requirements that specify how different combinations of conditions result in different outcomes. The conditions form the rows of the table. Each column corresponds to a decision rule that defines a unique combination of conditions, along with the associated actions. A full decision table has enough columns to cover every combination of conditions. In decision table testing, the coverage items are the columns containing feasible combinations of conditions. To achieve 100% coverage with this technique, test cases must exercise all these columns.",
-    "ImageUrl": "https://images.cram.com/images/upload-flashcard/07/77/13/40077713_m.jpg"
+    "ImageUrl": "https://images.cram.com/images/upload-flashcard/07/77/13/40077713_b.jpg"
   },
   {
     "Type": "SyllabusConcept",
     "Term": "Use state transition testing to derive test cases",
     "Definition": "A state table is a model where rows represent states, and its columns represent events. The cells represent transitions, and contain the target state. A test case based on a state diagram or state table is usually represented as a sequence of events, which results in a sequence of state changes. One test case may, and usually will, cover several transitions between states. In all states coverage, the coverage items are the states. To achieve 100% all states coverage, test cases must ensure that all the states are exercised. In valid transitions coverage (also called 0–switch coverage), the coverage items are single valid transitions. To achieve 100% valid transitions coverage, test cases must exercise all the valid transitions. In all transitions coverage, the coverage items are all the transitions shown in a state table. To achieve 100% all transitions coverage, test cases must exercise all the valid transitions and attempt to execute invalid transitions. All states coverage is weaker than valid transitions coverage, because it can typically be achieved without exercising all the transitions. Valid transitions coverage is the most widely used coverage criterion.",
-    "ImageUrl": "https://images.cram.com/images/upload-flashcard/07/77/12/40077712_m.jpg"
+    "ImageUrl": "https://images.cram.com/images/upload-flashcard/07/77/12/40077712_b.jpg"
   },
   {
     "Type": "SyllabusConcept",
@@ -339,7 +339,7 @@
     "Type": "SyllabusConcept",
     "Term": "Explain how to write user stories in collaboration with developers and business representatives",
     "Definition": "A user story represents a feature that will be valuable to a user. User stories have three critical aspects, called together the “3 C’s”: \n• Card – the medium describing a user story (e.g., an index card, an entry in an electronic board) \n• Conversation – explains how the software will be used (can be documented or verbal) \n• Confirmation – the acceptance criteria The most common format for a user story is “As a [role], I want [goal to be accomplished], so that I can [resulting business value for the role]”, followed by the acceptance criteria. Collaborative authorship of the user story can use techniques such as brainstorming and mind mapping. The collaboration allows the team to obtain a shared vision of what should be delivered, by taking into account three perspectives: business, development and testing. Good user stories should be: Independent, Negotiable, Valuable, Estimable, Small and Testable (INVEST). If a stakeholder does not know how to test a user story, this may indicate that the user story is not clear enough, or that it does not reflect something valuable to them, or that the stakeholder just needs help.",
-    "ImageUrl": "https://images.cram.com/images/upload-flashcard/07/77/95/40077795_m.jpg"
+    "ImageUrl": "https://images.cram.com/images/upload-flashcard/07/77/95/40077795_b.jpg"
   },
   {
     "Type": "SyllabusConcept",
@@ -392,7 +392,7 @@
   {
     "Type": "GlossaryTerm",
     "Term": "Error Guessing",
-    "Definition": "It is a test technique used to anticipate the occurrence of errors, defects, and failures, based on the tester’s knowledge, including: \n• How the application has worked in the past \n• The types of errors the developers tend to make and the types of defects that result from theseerrors \n• The types of failures that have occurred in other, similar applications",
+    "Definition": "It is a test technique used to anticipate the occurrence of errors, defects, and failures, based on the tester’s knowledge, including: \n• How the application has worked in the past \n• The types of errors the developers tend to make and the types of defects that result from these errors \n• The types of failures that have occurred in other, similar applications",
     "ImageUrl": null
   },
   {
